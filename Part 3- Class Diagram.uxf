@@ -68,9 +68,9 @@ Map&lt;Course,Collection&lt;StudentProfile&gt;&gt;
       <w>243</w>
       <h>54</h>
     </coordinates>
-    <panel_attributes>FinancialRecords
+    <panel_attributes>FinancialRecordsOffice
 --
-records:Map&lt;UserProfile,FinancialStuff&gt;</panel_attributes>
+records:Map&lt;UserProfile,boolean&gt;</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
