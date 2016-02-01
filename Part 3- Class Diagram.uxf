@@ -5,7 +5,7 @@
     <id>UMLClass</id>
     <coordinates>
       <x>297</x>
-      <y>99</y>
+      <y>135</y>
       <w>108</w>
       <h>63</h>
     </coordinates>
@@ -19,7 +19,7 @@ profile:UserProfile
     <id>UMLClass</id>
     <coordinates>
       <x>126</x>
-      <y>153</y>
+      <y>189</y>
       <w>117</w>
       <h>99</h>
     </coordinates>
@@ -36,11 +36,11 @@ permissionLevel:int</panel_attributes>
     <id>UMLClass</id>
     <coordinates>
       <x>297</x>
-      <y>297</y>
+      <y>333</y>
       <w>243</w>
       <h>81</h>
     </coordinates>
-    <panel_attributes>CourseSchedule
+    <panel_attributes>CourseHandler
 --
 Collection&lt;Course&gt;
 Map&lt;StudentProfile,Collection&lt;Course&gt;&gt;
@@ -53,7 +53,7 @@ Map&lt;Course,Collection&lt;StudentProfile&gt;&gt;
     <id>Relation</id>
     <coordinates>
       <x>405</x>
-      <y>369</y>
+      <y>405</y>
       <w>27</w>
       <h>72</h>
     </coordinates>
@@ -64,7 +64,7 @@ Map&lt;Course,Collection&lt;StudentProfile&gt;&gt;
     <id>UMLClass</id>
     <coordinates>
       <x>441</x>
-      <y>189</y>
+      <y>225</y>
       <w>243</w>
       <h>54</h>
     </coordinates>
@@ -77,7 +77,7 @@ records:Map&lt;UserProfile,boolean&gt;</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>180</x>
-      <y>27</y>
+      <y>63</y>
       <w>81</w>
       <h>144</h>
     </coordinates>
@@ -88,7 +88,7 @@ records:Map&lt;UserProfile,boolean&gt;</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>234</x>
-      <y>207</y>
+      <y>243</y>
       <w>225</w>
       <h>27</h>
     </coordinates>
@@ -99,7 +99,7 @@ records:Map&lt;UserProfile,boolean&gt;</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>342</x>
-      <y>54</y>
+      <y>90</y>
       <w>27</w>
       <h>63</h>
     </coordinates>
@@ -110,7 +110,7 @@ records:Map&lt;UserProfile,boolean&gt;</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>396</x>
-      <y>126</y>
+      <y>162</y>
       <w>180</w>
       <h>81</h>
     </coordinates>
@@ -121,7 +121,7 @@ records:Map&lt;UserProfile,boolean&gt;</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>198</x>
-      <y>243</y>
+      <y>279</y>
       <w>117</w>
       <h>90</h>
     </coordinates>
@@ -132,7 +132,7 @@ records:Map&lt;UserProfile,boolean&gt;</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>342</x>
-      <y>153</y>
+      <y>189</y>
       <w>90</w>
       <h>162</h>
     </coordinates>
@@ -143,7 +143,7 @@ records:Map&lt;UserProfile,boolean&gt;</panel_attributes>
     <id>UMLClass</id>
     <coordinates>
       <x>306</x>
-      <y>423</y>
+      <y>459</y>
       <w>225</w>
       <h>153</h>
     </coordinates>
@@ -164,7 +164,7 @@ time:Collection&lt;Time&gt;
     <id>Relation</id>
     <coordinates>
       <x>468</x>
-      <y>234</y>
+      <y>270</y>
       <w>117</w>
       <h>81</h>
     </coordinates>
@@ -175,7 +175,7 @@ time:Collection&lt;Time&gt;
     <id>Relation</id>
     <coordinates>
       <x>144</x>
-      <y>243</y>
+      <y>279</y>
       <w>180</w>
       <h>279</h>
     </coordinates>
@@ -186,7 +186,7 @@ time:Collection&lt;Time&gt;
     <id>Relation</id>
     <coordinates>
       <x>234</x>
-      <y>126</y>
+      <y>162</y>
       <w>81</w>
       <h>72</h>
     </coordinates>
@@ -197,7 +197,7 @@ time:Collection&lt;Time&gt;
     <id>UMLClass</id>
     <coordinates>
       <x>243</x>
-      <y>18</y>
+      <y>54</y>
       <w>216</w>
       <h>45</h>
     </coordinates>
