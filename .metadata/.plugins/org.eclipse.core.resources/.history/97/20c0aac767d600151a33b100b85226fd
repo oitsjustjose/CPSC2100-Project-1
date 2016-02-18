@@ -1,0 +1,63 @@
+package com.github.fantastic_five;
+
+import java.awt.BorderLayout;
+import java.awt.Dimension;
+import java.awt.GridBagLayout;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+
+/**
+ * 
+ * @author Fantastic Five
+ *
+ */
+
+public class StudentRegistrationMain
+{
+	//Local variable for our icon, which I will make later
+	private final static String APPLICATION_ICON = "application_icon";
+	
+	
+	//TODO: write everything!
+	public static void main(String[] args)
+	{
+		createWindow();
+	}
+	
+	private static void createWindow()
+	{
+		//Creates a window with the title "Student Registration"
+		JFrame frame = new JFrame("Student Registration");
+		//Sets it to terminate properly when closing the window
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
+		//Buttons for all actions
+		JButton createAcct = new JButton("Create Account");
+		JButton studentLogin = new JButton("Student Login");
+		JButton teacherLogin = new JButton("Teacher Login");
+		JButton adminLogin = new JButton("Administration Login");
+		
+		//Contents for inside our window, as well as the layout:
+		JPanel panel = new JPanel();
+		panel.setLayout(new GridBagLayout());
+		
+		//Adds the buttons to our panel
+		panel.add(createAcct);
+		panel.add(studentLogin);
+		panel.add(teacherLogin);
+		panel.add(adminLogin);
+		
+		
+		//Sets size and adds content to the window itself:
+		
+		frame.getContentPane().add(panel, BorderLayout.CENTER);
+		//Packages the frame and sets it so it can be seen:
+		frame.pack();
+		frame.setVisible(true);
+		
+		//Centers the window when it is made
+		frame.setLocationRelativeTo(null);
+	}
+}

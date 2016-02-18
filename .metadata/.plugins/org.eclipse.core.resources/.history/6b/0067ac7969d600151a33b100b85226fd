@@ -1,0 +1,90 @@
+package com.github.fantastic_five;
+
+import java.awt.BorderLayout;
+import java.awt.Dimension;
+import java.awt.GridBagLayout;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+
+/**
+ * 
+ * @author Fantastic Five
+ *
+ */
+
+public class StudentRegistrationMain
+{
+	// Local variable for our icon, which I will make later
+	private static final String APPLICATION_ICON = "application_icon";
+	private static final String ACCT_CREATE_ACTION = "account_create";
+	private static final String STUDENT_LOGIN_ACTION = "student_login";
+	private static final String TEACHER_LOGIN_ACTION = "teacher_login";
+	private static final STring ADMIN_LOGIN_ACTION = "admin_login";
+
+	// TODO: write everything!
+	public static void main(String[] args)
+	{
+		createMainWindow();
+	}
+
+	private static void createMainWindow()
+	{
+		// Creates a window with the title "Student Registration"
+		JFrame frame = new JFrame("Student Registration");
+		// Sets it to terminate properly when closing the window
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+		// Buttons for all actions
+		JButton createAcct = new JButton("Create Account");
+		JButton studentLogin = new JButton("Student Login");
+		JButton teacherLogin = new JButton("Teacher Login");
+		JButton adminLogin = new JButton("Administration Login");
+
+		// Contents for inside our window, as well as the layout:
+		JPanel panel1 = new JPanel();
+		panel1.setLayout(new GridBagLayout());
+		JPanel panel2 = new JPanel();
+		panel2.setLayout(new GridBagLayout());
+
+		// Adds the buttons to our panel
+		panel1.add(createAcct);
+		panel1.add(studentLogin);
+		panel2.add(teacherLogin);
+		panel2.add(adminLogin);
+
+		// Sets size and adds content to the window itself:
+		frame.setMinimumSize(new Dimension(372, 82));
+		frame.getContentPane().add(panel1, BorderLayout.NORTH);
+		frame.getContentPane().add(panel2, BorderLayout.SOUTH);
+
+		// Packages the frame and sets it so it can be seen:
+		frame.pack();
+		frame.setVisible(true);
+
+		// Centers the window when it is made
+		frame.setLocationRelativeTo(null);
+	}
+
+	private static void createAccountCreationWindow()
+	{
+		JFrame frame = new JFrame("Account Creation");
+	}
+
+	private static void createStudentLoginWindow()
+	{
+
+	}
+
+	private static void createTeacherLoginWindow()
+	{
+
+	}
+
+	private static void createAdminLoginWindow()
+	{
+
+	}
+
+}

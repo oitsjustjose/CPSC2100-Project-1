@@ -1,0 +1,33 @@
+package com.github.fantastic_five;
+
+import java.awt.BorderLayout;
+
+import javax.swing.JFrame;
+
+/**
+ * 
+ * @author Fantastic Five
+ *
+ */
+
+public class StudentRegistrationMain
+{
+	
+	//TODO: write everything!
+	public static void main(String[] args)
+	{
+		createWindow();
+	}
+	
+	private static void createWindow()
+	{
+		JFrame frame = new JFrame("Student Registration");
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
+		
+		
+		frame.getContentPane().add(null, BorderLayout.CENTER);
+		frame.pack();
+		frame.setVisible(true);
+	}
+}

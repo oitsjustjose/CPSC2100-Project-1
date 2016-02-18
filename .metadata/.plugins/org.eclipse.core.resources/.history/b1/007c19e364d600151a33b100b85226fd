@@ -1,0 +1,29 @@
+package com.github.fantastic_five;
+
+import javax.swing.JFrame;
+
+/**
+ * 
+ * @author Fantastic Five
+ *
+ */
+
+public class StudentRegistrationMain
+{
+	
+	//TODO: write everything!
+	public static void main(String[] args)
+	{
+		createWindow();
+	}
+	
+	static void createWindow()
+	{
+		JFrame frame = new JFrame("Student Registration");
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
+		
+		
+		//frame.getContentPane().add(comp, constraints);
+	}
+}

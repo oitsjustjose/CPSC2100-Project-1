@@ -1,0 +1,42 @@
+package com.github.fantastic_five;
+
+import java.awt.BorderLayout;
+
+import javax.swing.JFrame;
+
+/**
+ * 
+ * @author Fantastic Five
+ *
+ */
+
+public class StudentRegistrationMain
+{
+	//Local variable for our icon, which I will make later
+	private final static String APPLICATION_ICON = "application_icon";
+	
+	
+	//TODO: write everything!
+	public static void main(String[] args)
+	{
+		createWindow();
+	}
+	
+	private static void createWindow()
+	{
+		//Creates a window with the title "Student Registration"
+		JFrame frame = new JFrame("Student Registration");
+		//Sets it to terminate properly when closing the window
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
+		
+		//Adds content to the window itself:
+//		frame.getContentPane().add(null, BorderLayout.CENTER);
+		//Packages the frame
+		frame.pack();
+		//Sets it so the user can see it
+		frame.setVisible(true);
+		//Centers the window when it is made
+		frame.setLocationRelativeTo(null);
+	}
+}
