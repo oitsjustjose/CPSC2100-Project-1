@@ -1,15 +1,16 @@
 package com.github.fantastic_five;
 
-import java.awt.BorderLayout;
 import java.awt.Component;
 import java.awt.Dimension;
-import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 import javax.swing.JFrame;
+import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.SwingUtilities;
+
+import net.miginfocom.swing.MigLayout;
 
 /**
  * @author Fantastic Five KNOW YOUR AUDIENCE, KNOW THE TASKS
@@ -17,6 +18,7 @@ import javax.swing.SwingUtilities;
 
 public class StudentRegistrationMain implements ActionListener
 {
+	// Kept public for a reason - may be needed by other classes
 	public static JFrame mainWindow = new JFrame("FF Student Registration");
 	public static Dimension mainWindowDimension = new Dimension(512, 458);
 
@@ -38,24 +40,30 @@ public class StudentRegistrationMain implements ActionListener
 	private static void createMainWindow()
 	{
 		mainWindow.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		
+		mainWindow.setLayout(new MigLayout());
+
 		mainWindow.setPreferredSize(mainWindowDimension);
 		mainWindow.setResizable(false);
 
-		JPanel gui = new JPanel(new GridLayout());
-		
-		mainWindow.getContentPane().add(gui, BorderLayout.CENTER);
-		
+		// TODO: should show the logged in user and logout button
+		JPanel Status = new JPanel(new MigLayout());
+		Status.add(new JLabel("Logged In User:"), "span");
+		// TODO: this GUI is still blank
+		JPanel GUI = new JPanel(new MigLayout());
+		GUI.setSize(mainWindowDimension);
+
+		mainWindow.getContentPane().add(Status, "span, wrap, left");
+		mainWindow.getContentPane().add(GUI, "span");
+
 		mainWindow.pack();
 		mainWindow.setVisible(true);
 		mainWindow.setLocationRelativeTo(null);
 	}
 
+	// TODO: if/then/else statement comparing cmd to other action listeners
 	@Override
 	public void actionPerformed(ActionEvent e)
 	{
-		// TODO: if/then/else statement comparing cmd to other action listeners
-		// String cmd = e.getActionCommand();
 	}
 
 	/**
@@ -65,7 +73,8 @@ public class StudentRegistrationMain implements ActionListener
 	 */
 	public static void replaceMainWindowContents(Component newComponent)
 	{
-		mainWindow.getContentPane().remove(mainWindow.getComponents()[1]);
+		mainWindow.getContentPane().remove(1);
 		mainWindow.getContentPane().add(newComponent);
+		mainWindow.pack();
 	}
 }
