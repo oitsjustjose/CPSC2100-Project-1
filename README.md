@@ -6,4 +6,6 @@ These files are going to look weird in the online-viewer - that's because there'
 
 Feel free to make changes to any of these UML diagrams so that they make the most general sense - remember that what makes sense to one person might not make sense to everyone else!
 
-miglayout-core and miglayout-swing are BOTH required in order for the program to work and compile.
+miglayout-core and miglayout-swing are BOTH required in order for the program to work and compile. Here's a tutorial on MIG: http://www.miglayout.com/QuickStart.pdf
+
+How to set up Eclipse with this GitHub Repo: https://www.youtube.com/watch?v=jIa7S8OgGJ0
