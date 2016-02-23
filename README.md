@@ -9,3 +9,7 @@ Feel free to make changes to any of these UML diagrams so that they make the mos
 miglayout-core and miglayout-swing are BOTH required in order for the program to work and compile. Here's a tutorial on MIG: http://www.miglayout.com/QuickStart.pdf
 
 How to set up Eclipse with this GitHub Repo: https://www.youtube.com/watch?v=jIa7S8OgGJ0
+
+Getting started with MIG layout: http://www.miglayout.com/QuickStart.pdf
+
+Getting started with Java GUIs: https://docs.oracle.com/javase/tutorial/uiswing/components/
