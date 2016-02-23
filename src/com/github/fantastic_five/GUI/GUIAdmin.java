@@ -90,7 +90,7 @@ public class GUIAdmin implements ActionListener
 		createCourseButton.addActionListener(new GUIAdmin());
 
 		// Cancel button
-		JButton cancelButton = new JButton("Cancel");
+		JButton cancelButton = new JButton("Back");
 		cancelButton.setActionCommand(MAIN_CANCEL);
 		cancelButton.addActionListener(new GUIAdmin());
 
@@ -132,7 +132,7 @@ public class GUIAdmin implements ActionListener
 		removeCourseButton.addActionListener(new GUIAdmin());
 
 		// Cancel button
-		JButton cancelButton = new JButton("Cancel");
+		JButton cancelButton = new JButton("Back");
 		cancelButton.setActionCommand(MAIN_CANCEL);
 		cancelButton.addActionListener(new GUIAdmin());
 
