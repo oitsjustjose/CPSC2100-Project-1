@@ -6,13 +6,9 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 import javax.swing.JFrame;
-import javax.swing.JLabel;
-import javax.swing.JPanel;
 import javax.swing.SwingUtilities;
-
-import com.github.fantastic_five.GUI.GUIAdmin;
-
-import net.miginfocom.swing.MigLayout;
+import javax.swing.UIManager;
+import javax.swing.UnsupportedLookAndFeelException;
 
 /**
  * @author Fantastic Five KNOW YOUR AUDIENCE, KNOW THE TASKS
@@ -24,8 +20,10 @@ public class StudentRegistrationMain implements ActionListener
 	public static JFrame mainWindow = new JFrame("FF Student Registration");
 	public static Dimension mainWindowDimension = new Dimension(618, 458);
 
-	public static void main(String[] args)
+	// can throw many errors because of UIManager.setLookAndFeel below, but this makes it look more like the native buttons!
+	public static void main(String[] args) throws ClassNotFoundException, InstantiationException, IllegalAccessException, UnsupportedLookAndFeelException
 	{
+		UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
 		Runnable r = new Runnable()
 		{
 			@Override
@@ -42,20 +40,9 @@ public class StudentRegistrationMain implements ActionListener
 	private static void createMainWindow()
 	{
 		mainWindow.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		mainWindow.setLayout(new MigLayout());
 
 		mainWindow.setPreferredSize(mainWindowDimension);
 		mainWindow.setResizable(false);
-
-		// TODO: should show the logged in user and logout button
-		JPanel Status = new JPanel(new MigLayout());
-		Status.add(new JLabel("Logged In User:"), "span");
-		// TODO: this GUI is still blank
-		JPanel GUI = new JPanel(new MigLayout());
-		GUI.setSize(mainWindowDimension);
-
-		mainWindow.getContentPane().add(Status, "span, wrap, left");
-		mainWindow.getContentPane().add(GUI, "span");
 
 		mainWindow.pack();
 		mainWindow.setVisible(true);
@@ -75,7 +62,7 @@ public class StudentRegistrationMain implements ActionListener
 	 */
 	public static void replaceMainWindowContents(Component newComponent)
 	{
-		mainWindow.getContentPane().remove(1);
+		mainWindow.getContentPane().removeAll();
 		mainWindow.getContentPane().add(newComponent);
 		mainWindow.pack();
 	}

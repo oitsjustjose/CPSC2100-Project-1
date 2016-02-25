@@ -1,4 +1,4 @@
-package com.github.fantastic_five.GUI;
+package com.github.fantastic_five.GUIAdministrator;
 
 import java.awt.Color;
 import java.awt.Dimension;
@@ -12,9 +12,7 @@ import javax.swing.JTextField;
 
 import com.github.fantastic_five.StudentRegistrationMain;
 
-import net.miginfocom.swing.MigLayout;
-
-public class GUIAdmin implements ActionListener
+public class GUIAdminOld implements ActionListener
 {
 	private static final String MAIN_ADD_CLASS_ACTION = "main_add_class_action";
 	private static final String MAIN_REMOVE_CLASS_ACTION = "main_remove_class_action";
@@ -24,7 +22,7 @@ public class GUIAdmin implements ActionListener
 	private static final String ADD_WINDOW_CREATE_BUTTON_ACTION = "add_window_create_button_action";
 	private static final String REMOVE_WINDOW_REMOVE_BUTTON_ACTION = "remove_window_create_button_action";
 
-	private static JPanel GUI = new JPanel(new MigLayout("c, insets 0 120 0 120"));
+	private static JPanel GUI = new JPanel(null);
 	private static final JLabel SPACER = new JLabel();
 
 	public static void initialize()
@@ -41,9 +39,9 @@ public class GUIAdmin implements ActionListener
 		viewReportButton.setActionCommand(MAIN_VIEW_REPORT_ACTION);
 
 		// Adds listeners to all of these
-		addClassButton.addActionListener(new GUIAdmin());
-		removeClassButton.addActionListener(new GUIAdmin());
-		viewReportButton.addActionListener(new GUIAdmin());
+		addClassButton.addActionListener(new GUIAdminOld());
+		removeClassButton.addActionListener(new GUIAdminOld());
+		viewReportButton.addActionListener(new GUIAdminOld());
 
 		// Adds the buttons to our GUI, with proper spacing and stuff!
 		GUI.add(addClassButton, "wrap, span, c, w 240!");
@@ -87,12 +85,12 @@ public class GUIAdmin implements ActionListener
 		// Create Button!
 		JButton createCourseButton = new JButton("Create Course Offering");
 		createCourseButton.setActionCommand(ADD_WINDOW_CREATE_BUTTON_ACTION);
-		createCourseButton.addActionListener(new GUIAdmin());
+		createCourseButton.addActionListener(new GUIAdminOld());
 
 		// Cancel button
 		JButton cancelButton = new JButton("Back");
 		cancelButton.setActionCommand(MAIN_CANCEL);
-		cancelButton.addActionListener(new GUIAdmin());
+		cancelButton.addActionListener(new GUIAdminOld());
 
 		GUI.add(CRNLabel);
 		GUI.add(CRNField, "span, wrap");
@@ -129,12 +127,12 @@ public class GUIAdmin implements ActionListener
 		// Remove Course Button
 		JButton removeCourseButton = new JButton("Remove Course Offering");
 		removeCourseButton.setActionCommand(REMOVE_WINDOW_REMOVE_BUTTON_ACTION);
-		removeCourseButton.addActionListener(new GUIAdmin());
+		removeCourseButton.addActionListener(new GUIAdminOld());
 
 		// Cancel button
 		JButton cancelButton = new JButton("Back");
 		cancelButton.setActionCommand(MAIN_CANCEL);
-		cancelButton.addActionListener(new GUIAdmin());
+		cancelButton.addActionListener(new GUIAdminOld());
 
 		GUI.add(CRNLabel, "span, wrap");
 		GUI.add(SPACER, "wrap");
