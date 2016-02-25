@@ -10,6 +10,8 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.SwingUtilities;
 
+import com.github.fantastic_five.GUI.GUIAdmin;
+
 import net.miginfocom.swing.MigLayout;
 
 /**
@@ -20,7 +22,7 @@ public class StudentRegistrationMain implements ActionListener
 {
 	// Kept public for a reason - may be needed by other classes
 	public static JFrame mainWindow = new JFrame("FF Student Registration");
-	public static Dimension mainWindowDimension = new Dimension(512, 458);
+	public static Dimension mainWindowDimension = new Dimension(618, 458);
 
 	public static void main(String[] args)
 	{
