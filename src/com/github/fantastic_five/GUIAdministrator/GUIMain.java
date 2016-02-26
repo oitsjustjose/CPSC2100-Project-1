@@ -8,6 +8,9 @@ import javax.swing.JPanel;
 
 import com.github.fantastic_five.StudentRegistrationMain;
 import com.github.fantastic_five.GUIMisc.GUILoggedIn;
+import com.github.fantastic_five.Logic.Course;
+import com.github.fantastic_five.Logic.Lib;
+
 import javax.swing.JLabel;
 import javax.swing.SwingConstants;
 import java.awt.Font;
@@ -53,7 +56,8 @@ public class GUIMain extends JPanel
 			public void actionPerformed(ActionEvent e)
 			{
 				// TODO: Implement this!
-				System.out.println("Not yet implemented.");
+				for(Course c : Lib.masterCourseList)
+					System.out.println(c.toString());
 			}
 		});
 		add(btnViewReport);
