@@ -10,6 +10,8 @@ import javax.swing.SwingUtilities;
 import javax.swing.UIManager;
 import javax.swing.UnsupportedLookAndFeelException;
 
+import com.github.fantastic_five.GUIAdministrator.GUIAdmin;
+
 /**
  * @author Fantastic Five KNOW YOUR AUDIENCE, KNOW THE TASKS
  */
@@ -31,7 +33,6 @@ public class StudentRegistrationMain implements ActionListener
 			{
 				// Put anything that needs to run in main here!
 				createMainWindow();
-				GUIAdmin.initialize();
 			}
 		};
 		SwingUtilities.invokeLater(r);

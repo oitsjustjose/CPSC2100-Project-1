@@ -45,7 +45,7 @@ public class GUIRemoveClass extends JPanel
 		{
 			public void actionPerformed(ActionEvent e)
 			{
-				StudentRegistrationMain.replaceMainWindowContents(new GUIMain());
+				StudentRegistrationMain.replaceMainWindowContents(new GUIAdmin());
 			}
 		});
 		btnBack.setBounds(155, 237, 89, 23);

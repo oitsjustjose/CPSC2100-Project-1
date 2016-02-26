@@ -129,7 +129,7 @@ public class GUIAddClass extends JPanel
 		{
 			public void actionPerformed(ActionEvent e)
 			{
-				StudentRegistrationMain.replaceMainWindowContents(new GUIMain());
+				StudentRegistrationMain.replaceMainWindowContents(new GUIAdmin());
 			}
 		});
 		btnNewButton.setBounds(119, 347, 89, 23);

@@ -1,25 +1,23 @@
 package com.github.fantastic_five.GUIAdministrator;
 
+import java.awt.Color;
+import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 import javax.swing.JButton;
+import javax.swing.JLabel;
 import javax.swing.JPanel;
+import javax.swing.SwingConstants;
 
 import com.github.fantastic_five.StudentRegistrationMain;
+import com.github.fantastic_five.GUIMisc.GUICourseList;
 import com.github.fantastic_five.GUIMisc.GUILoggedIn;
-import com.github.fantastic_five.Logic.Course;
-import com.github.fantastic_five.Logic.Lib;
-
-import javax.swing.JLabel;
-import javax.swing.SwingConstants;
-import java.awt.Font;
-import java.awt.Color;
 
 @SuppressWarnings("serial")
-public class GUIMain extends JPanel
+public class GUIAdmin extends JPanel
 {
-	public GUIMain()
+	public GUIAdmin()
 	{
 		setLayout(null);
 		setBounds(0, 0, 618, 434);
@@ -55,9 +53,7 @@ public class GUIMain extends JPanel
 		{
 			public void actionPerformed(ActionEvent e)
 			{
-				// TODO: Implement this!
-				for(Course c : Lib.masterCourseList)
-					System.out.println(c.toString());
+				StudentRegistrationMain.replaceMainWindowContents(new GUICourseList());
 			}
 		});
 		add(btnViewReport);
