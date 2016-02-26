@@ -31,6 +31,7 @@ public class StudentRegistrationMain implements ActionListener
 			{
 				// Put anything that needs to run in main here!
 				createMainWindow();
+				GUIAdmin.initialize();
 			}
 		};
 		SwingUtilities.invokeLater(r);
