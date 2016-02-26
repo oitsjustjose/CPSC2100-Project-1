@@ -13,6 +13,8 @@ import javax.swing.SwingConstants;
 
 import com.github.fantastic_five.StudentRegistrationMain;
 import com.github.fantastic_five.GUIMisc.GUILoggedIn;
+import com.github.fantastic_five.Logic.Course;
+import com.github.fantastic_five.Logic.Lib;
 
 @SuppressWarnings("serial")
 public class GUIAddClass extends JPanel
@@ -32,7 +34,6 @@ public class GUIAddClass extends JPanel
 	{
 		setLayout(null);
 		setBounds(0, 0, 618, 434);
-
 		// All Labels and their positions:
 
 		JLabel lblCrn = new JLabel("CRN:");
@@ -80,9 +81,9 @@ public class GUIAddClass extends JPanel
 		// All modifyable text fields and their positions:
 
 		fieldCRN = new JTextField();
+		fieldCRN.setColumns(10);
 		fieldCRN.setBounds(240, 113, 217, 20);
 		add(fieldCRN);
-		fieldCRN.setColumns(10);
 
 		fieldCourseName = new JTextField();
 		fieldCourseName.setColumns(10);
@@ -140,7 +141,11 @@ public class GUIAddClass extends JPanel
 		{
 			public void actionPerformed(ActionEvent e)
 			{
-				System.out.println("Not yet implemented.");
+				Course testCourse = new Course(Integer.parseInt(fieldCRN.getText()), fieldCourseName.getText(), Integer.parseInt(fieldSection.getText()), fieldCourseDesc.getText(), fieldDays.getText(), fieldTimes.getText(), Integer.parseInt(fieldCapacity.getText()));
+				Lib.masterCourseList.add(testCourse);
+				clearFields();
+				System.out.println(testCourse);
+				System.out.println("Master Course List Size: " + Lib.masterCourseList.size());
 			}
 		});
 		btnCreate.setBounds(218, 347, 239, 23);
@@ -150,5 +155,17 @@ public class GUIAddClass extends JPanel
 		JPanel loginPanel = new GUILoggedIn();
 		loginPanel.setBounds(0, 0, 618, 24);
 		add(loginPanel);
+	}
+
+	public void clearFields()
+	{
+		fieldCRN.setText("");
+		fieldCourseName.setText("");
+		fieldSection.setText("");
+		fieldCourseDesc.setText("");
+		fieldDays.setText("");
+		fieldTimes.setText("");
+		fieldCapacity.setText("");
+
 	}
 }

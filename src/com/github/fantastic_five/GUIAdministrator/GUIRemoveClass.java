@@ -15,6 +15,7 @@ import javax.swing.SwingConstants;
 
 import com.github.fantastic_five.StudentRegistrationMain;
 import com.github.fantastic_five.GUIMisc.GUILoggedIn;
+import com.github.fantastic_five.Logic.Lib;
 
 @SuppressWarnings("serial")
 public class GUIRemoveClass extends JPanel
@@ -79,8 +80,8 @@ public class GUIRemoveClass extends JPanel
 				{
 					public void actionPerformed(ActionEvent e)
 					{
-						// TODO: add logic to this!
-						System.out.println("Not Yet Implemented!");
+						Lib.removeMatchingCRN(Integer.parseInt(fieldCRN.getText()));
+						popup.dispose();
 					}
 				});
 				btnYes.setBounds(234, 96, 89, 23);
