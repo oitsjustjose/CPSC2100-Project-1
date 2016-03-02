@@ -8,9 +8,9 @@ public class Lib
 
 	public static void removeMatchingCRN(int CRN)
 	{
-		for(int i = 0; i < masterCourseList.size(); i++)
+		for (int i = 0; i < masterCourseList.size(); i++)
 		{
-			if(masterCourseList.get(i).getCRN() == CRN)
+			if (masterCourseList.get(i).getCRN() == CRN)
 			{
 				masterCourseList.remove(i);
 				return;

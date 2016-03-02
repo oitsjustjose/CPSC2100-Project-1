@@ -15,8 +15,8 @@ public class GUILoggedIn extends JPanel
 		// Quick and easy childclass for the login bar - this will be added by EVERY GUI to avoid issues
 		setLayout(null);
 		setBounds(0, 0, 618, 24);
-		
-		//Sets a button and its actions
+
+		// Sets a button and its actions
 		JButton btnLogOut = new JButton("Log Out");
 		btnLogOut.setBounds(537, 0, 71, 23);
 		btnLogOut.addActionListener(new ActionListener()
@@ -29,7 +29,7 @@ public class GUILoggedIn extends JPanel
 		});
 		add(btnLogOut);
 
-		//Sets a label, TODO: make the label show the logged in user
+		// Sets a label, TODO: make the label show the logged in user
 		JLabel lblCurrentLoggedIn = new JLabel("Current Logged In User:");
 		lblCurrentLoggedIn.setBounds(10, 4, 117, 14);
 		add(lblCurrentLoggedIn);

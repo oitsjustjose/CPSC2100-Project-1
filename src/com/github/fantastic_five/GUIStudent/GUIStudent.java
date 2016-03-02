@@ -1,7 +1,6 @@
 package com.github.fantastic_five.GUIStudent;
 //Alay
 
-
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.event.ActionEvent;
@@ -29,25 +28,29 @@ public class GUIStudent extends JPanel
 		setBounds(0, 0, 618, 434);
 
 		JButton btnView = new JButton("View Course");
-		btnView.addMouseListener(new MouseAdapter() {
+		btnView.addMouseListener(new MouseAdapter()
+		{
 			@Override
-			public void mouseClicked(MouseEvent e) {
+			public void mouseClicked(MouseEvent e)
+			{
 				StudentRegistrationMain.replaceMainWindowContents(new GUIViewCourse());
 			}
 		});
-		
+
 		btnView.setBounds(232, 149, 150, 23);
 		add(btnView);
 
 		JButton btnAddremoveCourse = new JButton("Add / Remove Course");
-		btnAddremoveCourse.addMouseListener(new MouseAdapter() {
+		btnAddremoveCourse.addMouseListener(new MouseAdapter()
+		{
 			@Override
-			public void mouseClicked(MouseEvent e) {
+			public void mouseClicked(MouseEvent e)
+			{
 				StudentRegistrationMain.replaceMainWindowContents(new GUIAddRemoveCourse());
 
 			}
 		});
-		
+
 		btnAddremoveCourse.setBounds(232, 204, 150, 23);
 		add(btnAddremoveCourse);
 

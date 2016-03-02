@@ -40,7 +40,7 @@ public class GUICourseList extends JPanel
 		JPanel loginPanel = new GUILoggedIn();
 		loginPanel.setBounds(0, 0, 618, 24);
 		add(loginPanel);
-		
+
 		JButton btnBack = new JButton("Back");
 		btnBack.addActionListener(new ActionListener()
 		{
@@ -51,7 +51,7 @@ public class GUICourseList extends JPanel
 		});
 		btnBack.setBounds(267, 391, 89, 23);
 		add(btnBack);
-		
+
 		JScrollPane scrollPane = new JScrollPane();
 		scrollPane.setHorizontalScrollBarPolicy(ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
 		scrollPane.setBounds(7, 35, 598, 348);

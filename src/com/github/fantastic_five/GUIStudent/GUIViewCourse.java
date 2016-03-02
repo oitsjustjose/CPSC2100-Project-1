@@ -1,4 +1,5 @@
 package com.github.fantastic_five.GUIStudent;
+
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
@@ -22,50 +23,34 @@ public class GUIViewCourse extends JPanel
 	{
 		setBounds(0, 0, 618, 434);
 		setLayout(null);
-		
+
 		JScrollPane scrollPane = new JScrollPane();
 		scrollPane.setBounds(10, 11, 586, 364);
 		add(scrollPane);
-		
+
 		table = new JTable();
-		table.setModel(new DefaultTableModel(
-			new Object[][] {
-				{null, null, null, null, null, null, null},
-				{null, null, null, null, null, null, null},
-				{null, null, null, null, null, null, null},
-				{null, null, null, null, null, null, null},
-				{null, null, null, null, null, null, null},
-				{null, null, null, null, null, null, null},
-				{null, null, null, null, null, null, null},
-				{null, null, null, null, null, null, null},
-				{null, null, null, null, null, null, null},
-				{null, null, null, null, null, null, null},
-				{null, null, null, null, null, null, null},
-				{null, null, null, null, null, null, null},
-				{null, null, null, null, null, null, null},
-				{null, null, null, null, null, null, null},
-				{null, null, null, null, null, null, null},
-				{null, null, null, null, null, null, null},
-				{null, null, null, null, null, null, null},
-				{null, null, null, null, null, null, null},
-				{null, null, null, null, null, null, null},
-				{null, null, null, null, null, null, null},
-				{null, null, null, null, null, null, null},
-				{null, null, null, null, null, null, null},
-				{null, null, null, null, null, null, null},
-				{null, null, null, null, null, null, null},
-				{null, null, null, null, null, null, null},
-			},
-			new String[] {
-				"CRN", "Class", "Capacity", "Remaining", "Teacher", "Time", "Room"
-			}
-		));
+		table.setModel(new DefaultTableModel(new Object[][] { { null, null, null, null, null, null, null }, { null, null, null, null, null, null, null }, { null, null, null, null, null, null, null }, { null, null, null, null, null, null, null }, { null, null, null, null, null, null, null }, { null, null, null, null, null, null, null }, { null, null, null, null, null, null, null }, { null, null, null, null, null, null, null }, { null, null, null, null, null, null, null }, { null, null, null, null, null, null, null }, { null, null, null, null, null, null, null }, { null, null, null, null, null, null, null }, { null, null, null, null, null, null, null }, { null, null, null, null, null, null,
+						null },
+				{ null, null, null, null, null, null, null },
+				{ null, null, null, null, null, null, null },
+				{ null, null, null, null, null, null, null },
+				{ null, null, null, null, null, null, null },
+				{ null, null, null, null, null, null, null },
+				{ null, null, null, null, null, null, null },
+				{ null, null, null, null, null, null, null },
+				{ null, null, null, null, null, null, null },
+				{ null, null, null, null, null, null, null },
+				{ null, null, null, null, null, null, null },
+				{ null, null, null, null, null, null, null }, }, new String[]
+		{ "CRN", "Class", "Capacity", "Remaining", "Teacher", "Time", "Room" }));
 		scrollPane.setViewportView(table);
-		
+
 		JButton btnBack = new JButton("Back");
-		btnBack.addMouseListener(new MouseAdapter() {
+		btnBack.addMouseListener(new MouseAdapter()
+		{
 			@Override
-			public void mouseClicked(MouseEvent arg0) {
+			public void mouseClicked(MouseEvent arg0)
+			{
 				StudentRegistrationMain.replaceMainWindowContents(new GUIStudent());
 			}
 		});

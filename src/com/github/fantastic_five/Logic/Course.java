@@ -37,37 +37,37 @@ public class Course
 		this.time = time;
 		this.capacity = capacity;
 	}
-	
+
 	public int getCRN()
 	{
 		return this.CRN;
 	}
-	
+
 	public String getName()
 	{
 		return this.name;
 	}
-	
+
 	public int getSection()
 	{
 		return this.section;
 	}
-	
+
 	public String getDesc()
 	{
 		return this.desc;
 	}
-	
+
 	public String getDays()
 	{
 		return this.day;
 	}
-	
+
 	public String getTimes()
 	{
 		return this.time;
 	}
-	
+
 	public int getCap()
 	{
 		return this.capacity;
