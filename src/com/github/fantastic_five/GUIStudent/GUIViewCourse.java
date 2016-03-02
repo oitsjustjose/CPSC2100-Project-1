@@ -1,11 +1,15 @@
+package com.github.fantastic_five.GUIStudent;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
+
+import javax.swing.JButton;
 //Alay
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTable;
 import javax.swing.table.DefaultTableModel;
-import javax.swing.JButton;
-import java.awt.event.MouseAdapter;
-import java.awt.event.MouseEvent;
+
+import com.github.fantastic_five.StudentRegistrationMain;
 
 public class GUIViewCourse extends JPanel
 {
