@@ -1,19 +1,16 @@
-package com.github.fantastic_five.GUIStudent;
 //Alay
 
+
+import javax.swing.JPanel;
+import javax.swing.JButton;
+import java.awt.event.ActionListener;
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
+import javax.swing.SwingConstants;
+import javax.swing.JLabel;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
-
-import javax.swing.JButton;
-import javax.swing.JLabel;
-import javax.swing.JPanel;
-import javax.swing.SwingConstants;
-
-import com.github.fantastic_five.StudentRegistrationMain;
 
 @SuppressWarnings("serial")
 public class GUIStudent extends JPanel
@@ -28,29 +25,25 @@ public class GUIStudent extends JPanel
 		setBounds(0, 0, 618, 434);
 
 		JButton btnView = new JButton("View Course");
-		btnView.addMouseListener(new MouseAdapter()
-		{
+		btnView.addMouseListener(new MouseAdapter() {
 			@Override
-			public void mouseClicked(MouseEvent e)
-			{
+			public void mouseClicked(MouseEvent e) {
 				StudentRegistrationMain.replaceMainWindowContents(new GUIViewCourse());
 			}
 		});
-
+		
 		btnView.setBounds(232, 149, 150, 23);
 		add(btnView);
 
 		JButton btnAddremoveCourse = new JButton("Add / Remove Course");
-		btnAddremoveCourse.addMouseListener(new MouseAdapter()
-		{
+		btnAddremoveCourse.addMouseListener(new MouseAdapter() {
 			@Override
-			public void mouseClicked(MouseEvent e)
-			{
+			public void mouseClicked(MouseEvent e) {
 				StudentRegistrationMain.replaceMainWindowContents(new GUIAddRemoveCourse());
 
 			}
 		});
-
+		
 		btnAddremoveCourse.setBounds(232, 204, 150, 23);
 		add(btnAddremoveCourse);
 
