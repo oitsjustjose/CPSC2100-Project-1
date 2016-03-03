@@ -11,8 +11,10 @@ import javax.swing.JPanel;
 import javax.swing.SwingConstants;
 
 import com.github.fantastic_five.StudentRegistrationMain;
-import com.github.fantastic_five.GUIMisc.GUICourseList;
 import com.github.fantastic_five.GUIMisc.GUILoggedIn;
+import com.github.fantastic_five.GUIStudent.GUIViewCourse;
+
+//TODO: Implement teacher / student view
 
 @SuppressWarnings("serial")
 public class GUIAdmin extends JPanel
@@ -53,7 +55,7 @@ public class GUIAdmin extends JPanel
 		{
 			public void actionPerformed(ActionEvent e)
 			{
-				StudentRegistrationMain.replaceMainWindowContents(new GUICourseList());
+				StudentRegistrationMain.replaceMainWindowContents(new GUIViewReport());
 			}
 		});
 		add(btnViewReport);
