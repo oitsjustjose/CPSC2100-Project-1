@@ -1,4 +1,5 @@
- 
+package com.github.fantastic_five.Teacher;
+
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.event.ActionEvent;
