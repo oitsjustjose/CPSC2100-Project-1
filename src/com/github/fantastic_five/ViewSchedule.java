@@ -12,12 +12,6 @@ import javax.swing.JTable;
 import javax.swing.table.DefaultTableModel;
 
 import com.github.fantastic_five.StudentRegistrationMain;
-/**
- * Write a description of class ViewSchedule here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
 public class ViewSchedule extends JPanel
 {
 	/**
