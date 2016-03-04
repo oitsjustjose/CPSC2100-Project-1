@@ -1,4 +1,4 @@
-//package com.github.fantastic_five.Teacher; 
+package com.github.fantastic_five.Teacher; 
 
 import java.awt.Color;
 import java.awt.EventQueue;
@@ -9,12 +9,8 @@ import javax.swing.JLabel;
 import javax.swing.JButton;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
-/**
- * Write a description of class Remove here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
+
+
 public class Remove
 {
     private JFrame frame;
