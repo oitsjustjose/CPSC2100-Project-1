@@ -1,4 +1,4 @@
-  package com.github.fantastic_five.Teacher;
+package com.github.fantastic_five.Teacher;
 
 import java.awt.Color;
 import java.awt.Font;
@@ -17,12 +17,6 @@ import javax.swing.JTextField;
 import javax.swing.table.DefaultTableModel;
 
 import com.github.fantastic_five.StudentRegistrationMain;
-/**
- * Write a description of class AddDropCourse here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
 public class AddDropCourse extends JPanel
 {
     private JTextField textField;
