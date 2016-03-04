@@ -13,12 +13,6 @@ import javax.swing.JPanel;
 import javax.swing.SwingConstants;
 
 import com.github.fantastic_five.StudentRegistrationMain;
-/**
- * Write a description of class Teacher here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
 public class Teacher extends JPanel
 {
 	/**
@@ -65,13 +59,13 @@ public class Teacher extends JPanel
 		btnViewSchedule.setBounds(232, 259, 150, 23);
 		add(btnViewSchedule);
 
-		JLabel lblStudent = new JLabel("Student");
-		lblStudent.setBounds(232, 78, 46, 14);
-		lblStudent.setForeground(Color.GRAY);
-		lblStudent.setFont(new Font("Verdana", Font.BOLD, 16));
-		lblStudent.setHorizontalAlignment(SwingConstants.CENTER);
-		lblStudent.setBounds(232, 60, 150, 23);
-		add(lblStudent);
+		JLabel lblTeacher = new JLabel("Teacher");
+		lblTeacher.setBounds(232, 78, 46, 14);
+		lblTeacher.setForeground(Color.GRAY);
+		lblTeacher.setFont(new Font("Verdana", Font.BOLD, 16));
+		lblTeacher.setHorizontalAlignment(SwingConstants.CENTER);
+		lblTeacher.setBounds(232, 60, 150, 23);
+		add(lblTeacher);
 
 	}
 }
