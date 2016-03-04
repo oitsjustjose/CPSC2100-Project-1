@@ -1,4 +1,5 @@
- 
+package com.github.fantastic_five.Teacher;
+
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
@@ -10,18 +11,12 @@ import javax.swing.JTable;
 import javax.swing.table.DefaultTableModel;
 
 import com.github.fantastic_five.StudentRegistrationMain;
-/**
- * Write a description of class ViewCourse here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
 public class ViewCourse extends JPanel
 {
    private JTable table;
 
 	/**
-	 * Create the panel.
+	 * Creates the panel.
 	 */
 	public ViewCourse()
 	{
