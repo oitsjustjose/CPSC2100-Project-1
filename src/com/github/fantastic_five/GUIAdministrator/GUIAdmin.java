@@ -12,7 +12,7 @@ import javax.swing.SwingConstants;
 
 import com.github.fantastic_five.StudentRegistrationMain;
 import com.github.fantastic_five.GUIMisc.GUILoggedIn;
-import com.github.fantastic_five.GUIStudent.GUIViewCourse;
+
 
 //TODO: Implement teacher / student view
 
