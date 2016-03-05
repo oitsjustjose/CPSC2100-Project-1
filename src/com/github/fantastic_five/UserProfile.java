@@ -85,7 +85,7 @@ public class UserProfile
 	 */
 	public boolean passwordIs(String guess)
 	{
-		return this.password.equals(guess);
+		return password.equals(guess);
 	}
 	
 	/**
