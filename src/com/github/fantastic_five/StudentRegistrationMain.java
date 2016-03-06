@@ -14,7 +14,7 @@ import com.github.fantastic_five.GUI.GUILogin;
 import com.github.fantastic_five.GUIAdministrator.GUIAddClass;
 import com.github.fantastic_five.GUIMisc.GUILoggedIn;
 import com.github.fantastic_five.GUIStudent.GUIStudent;
-import com.github.fantastic_five.Teacher.Teacher;
+import com.github.fantastic_five.GUITeacher.Teacher;
 
 /**
  * @author Fantastic Five KNOW YOUR AUDIENCE, KNOW THE TASKS

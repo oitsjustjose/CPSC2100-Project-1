@@ -54,28 +54,34 @@ public class GUIViewReport extends JPanel
 		JPanel loginPanel = new GUILoggedIn();
 		loginPanel.setBounds(0, 0, 618, 24);
 		add(loginPanel);
-		
+
 		JButton btnBack = new JButton("Back");
-		btnBack.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent arg0) {
+		btnBack.addActionListener(new ActionListener()
+		{
+			public void actionPerformed(ActionEvent arg0)
+			{
 			}
 		});
-		btnBack.addMouseListener(new MouseAdapter() {
+		btnBack.addMouseListener(new MouseAdapter()
+		{
 			@Override
-			public void mouseClicked(MouseEvent arg0) {
+			public void mouseClicked(MouseEvent arg0)
+			{
 				StudentRegistrationMain.replaceMainWindowContents(new GUIAdmin());
 			}
 		});
 		btnBack.setBounds(10, 386, 128, 23);
 		add(btnBack);
-		
+
 		JButton btnPrint = new JButton("Print");
-		btnPrint.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
+		btnPrint.addActionListener(new ActionListener()
+		{
+			public void actionPerformed(ActionEvent e)
+			{
 			}
 		});
 		btnPrint.setBounds(498, 386, 99, 23);
 		add(btnPrint);
-			
+
 	}
 }

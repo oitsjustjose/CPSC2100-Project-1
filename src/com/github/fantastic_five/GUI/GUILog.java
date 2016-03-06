@@ -10,7 +10,6 @@ import javax.swing.JPasswordField;
 import javax.swing.JTextField;
 import javax.swing.SwingConstants;
 
-
 public class GUILog extends JPanel
 {
 	/**
@@ -31,13 +30,13 @@ public class GUILog extends JPanel
 		usernameField.setForeground(new Color(0, 0, 0));
 		usernameField.setBounds(252, 190, 202, 20);
 		add(usernameField);
-//		usernameField.setColumns(10);
+		// usernameField.setColumns(10);
 
 		passwordField = new JPasswordField();
 		passwordField.setHorizontalAlignment(SwingConstants.LEFT);
 		passwordField.setBounds(252, 221, 202, 20);
 		add(passwordField);
-		
+
 		JLabel lblWelcomeMSG = new JLabel("WELCOME!");
 		lblWelcomeMSG.setFont(new Font("Verdana", Font.BOLD, 70));
 		lblWelcomeMSG.setBounds(90, 49, 700, 70);
@@ -61,19 +60,18 @@ public class GUILog extends JPanel
 		btnForgotPassword.setForeground(Color.RED);
 		btnForgotPassword.setFont(new Font("Verdana", Font.BOLD, 11));
 		add(btnForgotPassword);
-		
+
 		JButton btnLogin = new JButton("Login");
 		btnLogin.setBounds(258, 280, 90, 23);
 		btnLogin.setForeground(Color.BLACK);
 		btnLogin.setFont(new Font("Verdana", Font.BOLD, 15));
 		add(btnLogin);
-		
+
 		JButton btnGuest = new JButton("Guest");
 		btnGuest.setBounds(359, 280, 90, 23);
 		btnGuest.setForeground(Color.BLACK);
 		btnGuest.setFont(new Font("Verdana", Font.BOLD, 15));
 		add(btnGuest);
-		
 
 	}
 }

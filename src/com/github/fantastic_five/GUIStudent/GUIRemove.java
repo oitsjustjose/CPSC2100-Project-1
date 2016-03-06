@@ -56,22 +56,24 @@ public class GUIRemove
 		frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 		frame.setLocationRelativeTo(null);
 		frame.getContentPane().setLayout(null);
-		
-		JLabel  txtpnAreYouSure = new JLabel();
+
+		JLabel txtpnAreYouSure = new JLabel();
 		txtpnAreYouSure.setText("Are you sure?");
 		txtpnAreYouSure.setForeground(Color.RED);
 		txtpnAreYouSure.setFont(new Font("Verdana", Font.BOLD, 16));
 		txtpnAreYouSure.setBounds(86, 11, 127, 20);
 		frame.getContentPane().add(txtpnAreYouSure);
-		
+
 		JButton btnYes = new JButton("Yes");
 		btnYes.setBounds(10, 44, 89, 23);
 		frame.getContentPane().add(btnYes);
-		
+
 		JButton btnNo = new JButton("No");
-		btnNo.addMouseListener(new MouseAdapter() {
+		btnNo.addMouseListener(new MouseAdapter()
+		{
 			@Override
-			public void mouseClicked(MouseEvent arg0) {
+			public void mouseClicked(MouseEvent arg0)
+			{
 				frame.dispose();
 			}
 		});

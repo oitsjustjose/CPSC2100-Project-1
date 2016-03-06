@@ -45,7 +45,9 @@ public class UserProfileDatabase
 
 	/**
 	 * Adds a new userProfile to the database iff !hasUser(user.getUserID)
-	 * @param user The userProfile being added
+	 * 
+	 * @param user
+	 *            The userProfile being added
 	 * @return Returns true iff hasUser(user.getUserID)
 	 */
 	public boolean addUserProfile(UserProfile user)
@@ -59,13 +61,13 @@ public class UserProfileDatabase
 		}
 		return hasUser;
 	}
-	
+
 	public UserProfile login(String userID, String password)
 	{
-		for(UserProfile e: users)
-		{			
+		for (UserProfile e : users)
+		{
 		}
 		return null;
 	}
-	
+
 }

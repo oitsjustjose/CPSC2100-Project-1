@@ -13,7 +13,6 @@ import javax.swing.SwingConstants;
 import com.github.fantastic_five.StudentRegistrationMain;
 import com.github.fantastic_five.GUIMisc.GUILoggedIn;
 
-
 //TODO: Implement teacher / student view
 
 @SuppressWarnings("serial")

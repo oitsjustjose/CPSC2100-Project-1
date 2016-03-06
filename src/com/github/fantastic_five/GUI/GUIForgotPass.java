@@ -51,15 +51,15 @@ public class GUIForgotPass
 		frame.setBounds(100, 100, 303, 141);
 		frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 		frame.getContentPane().setLayout(null);
-		
+
 		JTextArea txtpnPleaseContactThe = new JTextArea();
 		txtpnPleaseContactThe.setFont(new Font("Tahoma", Font.PLAIN, 15));
 		txtpnPleaseContactThe.setBackground(UIManager.getColor("menu"));
 		txtpnPleaseContactThe.setEditable(false);
 		txtpnPleaseContactThe.setText("Please contact the System\r\n  Administration Office to\r\n   obtain your password.\r\n          Thank you.");
-//		txtpnPleaseContactThe.setLineWrap(true);
-//		txtpnPleaseContactThe.setAlignmentY(Component.CENTER_ALIGNMENT);
-//		txtpnPleaseContactThe.setWrapStyleWord(true);
+		// txtpnPleaseContactThe.setLineWrap(true);
+		// txtpnPleaseContactThe.setAlignmentY(Component.CENTER_ALIGNMENT);
+		// txtpnPleaseContactThe.setWrapStyleWord(true);
 		txtpnPleaseContactThe.setBounds(57, 11, 178, 80);
 		frame.getContentPane().add(txtpnPleaseContactThe);
 	}
