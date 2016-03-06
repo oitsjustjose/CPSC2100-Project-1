@@ -47,7 +47,7 @@ public class GUIViewReport extends JPanel
 				{ null, null, null, null, null, null, null },
 				{ null, null, null, null, null, null, null },
 				{ null, null, null, null, null, null, null }, }, new String[]
-		{ "CRN", "Class", "Capacity", "Remaining", "Teacher", "Time", "Room" }));
+		{ "CRN", "Class", "Capacity", "Remaining",  "Time", "Day", "Teacher", "Room" }));
 		scrollPane.setViewportView(table);
 
 		// Adds the loginPanel to our panel

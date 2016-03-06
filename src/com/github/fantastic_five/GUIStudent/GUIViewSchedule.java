@@ -29,7 +29,8 @@ public class GUIViewSchedule extends JPanel
 		add(scrollPane);
 
 		JTable table = new JTable();
-		table.setModel(new DefaultTableModel(new Object[][] { { null, null, null, null, null, null, null }, { null, null, null, null, null, null, null }, { null, null, null, null, null, null, null }, { null, null, null, null, null, null, null }, { null, null, null, null, null, null, null }, }, new String[] { "CRN", "Class", "Capacity", "Remaining", "Teacher", "Time", "Room" }));
+		table.setModel(new DefaultTableModel(new Object[][] { { null, null, null, null, null, null, null }, { null, null, null, null, null, null, null }, { null, null, null, null, null, null, null }, { null, null, null, null, null, null, null }, { null, null, null, null, null, null, null }, },
+				new String[] {"CRN", "Class", "Capacity", "Remaining",  "Time", "Day", "Teacher", "Room" }));
 		scrollPane.setViewportView(table);
 
 		JButton btnBack = new JButton("Back");
