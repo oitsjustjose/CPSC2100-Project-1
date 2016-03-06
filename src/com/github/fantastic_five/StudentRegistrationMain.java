@@ -10,11 +10,7 @@ import javax.swing.SwingUtilities;
 import javax.swing.UIManager;
 import javax.swing.UnsupportedLookAndFeelException;
 
-import com.github.fantastic_five.GUI.GUILogin;
-import com.github.fantastic_five.GUIAdministrator.GUIAddClass;
-import com.github.fantastic_five.GUIMisc.GUILoggedIn;
 import com.github.fantastic_five.GUIStudent.GUIStudent;
-import com.github.fantastic_five.GUITeacher.Teacher;
 
 /**
  * @author Fantastic Five KNOW YOUR AUDIENCE, KNOW THE TASKS
@@ -37,7 +33,7 @@ public class StudentRegistrationMain implements ActionListener
 			{
 				// Put anything that needs to run in main here!
 				createMainWindow();
-				replaceMainWindowContents(new Teacher());
+				replaceMainWindowContents(new GUIStudent());
 			}
 		};
 		SwingUtilities.invokeLater(r);
