@@ -22,8 +22,8 @@ public class GUIViewSchedule extends JPanel
 	 */
 	public GUIViewSchedule()
 	{
-		setLayout(null);
 		setBounds(0, 0, 618, 434);
+		setLayout(null);
 		JScrollPane scrollPane = new JScrollPane();
 		scrollPane.setBounds(10, 60, 587, 107);
 		add(scrollPane);
@@ -34,6 +34,7 @@ public class GUIViewSchedule extends JPanel
 		scrollPane.setViewportView(table);
 
 		JButton btnBack = new JButton("Back");
+		btnBack.setBounds(10, 386, 128, 23);
 		btnBack.addActionListener(new ActionListener()
 		{
 			public void actionPerformed(ActionEvent arg0)
@@ -48,22 +49,25 @@ public class GUIViewSchedule extends JPanel
 				StudentRegistrationMain.replaceMainWindowContents(new GUIStudent());
 			}
 		});
-		btnBack.setBounds(10, 386, 128, 23);
 		add(btnBack);
 
 		JButton btnPrint = new JButton("Print");
+		btnPrint.setBounds(498, 386, 99, 23);
 		btnPrint.addActionListener(new ActionListener()
 		{
 			public void actionPerformed(ActionEvent e)
 			{
 			}
 		});
-		btnPrint.setBounds(498, 386, 99, 23);
 		add(btnPrint);
 
 		JButton btnLogOut = new JButton("Log Out");
 		btnLogOut.setBounds(498, 11, 99, 23);
 		add(btnLogOut);
+		
+		JScrollPane scrollPane_1 = new JScrollPane();
+		scrollPane_1.setBounds(10, 178, 587, 197);
+		add(scrollPane_1);
 
 	}
 }
