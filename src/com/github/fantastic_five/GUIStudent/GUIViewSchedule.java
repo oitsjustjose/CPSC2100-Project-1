@@ -29,8 +29,7 @@ public class GUIViewSchedule extends JPanel
 		add(scrollPane);
 
 		JTable table = new JTable();
-		table.setModel(new DefaultTableModel(new Object[][] { { null, null, null, null, null, null, null }, { null, null, null, null, null, null, null }, { null, null, null, null, null, null, null }, { null, null, null, null, null, null, null }, { null, null, null, null, null, null, null }, },
-				new String[] {"CRN", "Class", "Capacity", "Remaining",  "Time", "Day", "Teacher", "Room" }));
+		table.setModel(new DefaultTableModel(new Object[][] { { null, null, null, null, null, null, null }, { null, null, null, null, null, null, null }, { null, null, null, null, null, null, null }, { null, null, null, null, null, null, null }, { null, null, null, null, null, null, null }, }, new String[] { "CRN", "Class", "Capacity", "Remaining", "Time", "Day", "Teacher", "Room" }));
 		scrollPane.setViewportView(table);
 
 		JButton btnBack = new JButton("Back");
@@ -64,7 +63,7 @@ public class GUIViewSchedule extends JPanel
 		JButton btnLogOut = new JButton("Log Out");
 		btnLogOut.setBounds(498, 11, 99, 23);
 		add(btnLogOut);
-		
+
 		JScrollPane scrollPane_1 = new JScrollPane();
 		scrollPane_1.setBounds(10, 178, 587, 197);
 		add(scrollPane_1);

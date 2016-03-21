@@ -16,16 +16,24 @@ import com.github.fantastic_five.GUIStudent.GUIStudent;
  * @author Fantastic Five KNOW YOUR AUDIENCE, KNOW THE TASKS
  */
 
-public class StudentRegistrationMain implements ActionListener
+public class StudentRegistrationMain
 {
 	// Kept public for a reason - may be needed by other classes
 	public static JFrame mainWindow = new JFrame("FF Student Registration");
 	public static Dimension mainWindowDimension = new Dimension(618, 458);
 
-	// can throw many errors because of UIManager.setLookAndFeel below, but this makes it look more like the native buttons!
-	public static void main(String[] args) throws ClassNotFoundException, InstantiationException, IllegalAccessException, UnsupportedLookAndFeelException
+	public static void main(String[] args)
 	{
-		UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
+		//Attempts to stylize the GUIs and Buttons using the Operating Systems' style 
+		try
+		{
+			UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
+		}
+		catch (ClassNotFoundException | InstantiationException | IllegalAccessException | UnsupportedLookAndFeelException e)
+		{
+			System.out.println("There was an error using the System's Look and Feel");
+			System.out.println(e.getMessage());
+		}
 		Runnable r = new Runnable()
 		{
 			@Override
@@ -39,7 +47,6 @@ public class StudentRegistrationMain implements ActionListener
 		SwingUtilities.invokeLater(r);
 	}
 
-	// TODO: properly implement this
 	private static void createMainWindow()
 	{
 		mainWindow.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -50,12 +57,6 @@ public class StudentRegistrationMain implements ActionListener
 		mainWindow.pack();
 		mainWindow.setVisible(true);
 		mainWindow.setLocationRelativeTo(null);
-	}
-
-	// TODO: if/then/else statement comparing cmd to other action listeners
-	@Override
-	public void actionPerformed(ActionEvent e)
-	{
 	}
 
 	/**

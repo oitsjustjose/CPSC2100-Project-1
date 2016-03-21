@@ -14,7 +14,7 @@ import javax.swing.JPanel;
 import javax.swing.SwingConstants;
 
 import com.github.fantastic_five.StudentRegistrationMain;
-import com.github.fantastic_five.GUIAdministrator.GUIViewReport;
+import com.github.fantastic_five.GUIMisc.GUIViewReport;
 
 @SuppressWarnings("serial")
 public class GUIStudent extends JPanel
@@ -34,7 +34,7 @@ public class GUIStudent extends JPanel
 			@Override
 			public void mouseClicked(MouseEvent e)
 			{
-				StudentRegistrationMain.replaceMainWindowContents(new GUIViewReport());
+				StudentRegistrationMain.replaceMainWindowContents(new GUIViewReport(new GUIStudent()));
 			}
 		});
 

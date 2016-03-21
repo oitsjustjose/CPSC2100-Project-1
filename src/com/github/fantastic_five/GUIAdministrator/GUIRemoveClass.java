@@ -22,6 +22,9 @@ public class GUIRemoveClass extends JPanel
 {
 	private JTextField fieldCRN;
 
+	/**
+	 * @return A window containing the field necessary to remove a course offering from the University
+	 */
 	public GUIRemoveClass()
 	{
 		setLayout(null);

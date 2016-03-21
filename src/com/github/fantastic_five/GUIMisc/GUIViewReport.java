@@ -22,7 +22,9 @@ public class GUIViewReport extends JPanel
 	 * Create the panel.
 	 * 
 	 * @param previousPanel
-	 *            the panel that needs to be shown when the "Back" button is hit
+	 *            The panel that needs to be shown when the "Back" button is hit
+	 * @return JPanel with contents for a table containing available classes
+	 * 
 	 */
 	public GUIViewReport(JPanel previousPanel)
 	{

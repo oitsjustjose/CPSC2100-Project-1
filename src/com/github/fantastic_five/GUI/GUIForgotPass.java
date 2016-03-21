@@ -35,17 +35,9 @@ public class GUIForgotPass
 	}
 
 	/**
-	 * Create the application.
+	 * @return A new window with notification for a forgotten password
 	 */
 	public GUIForgotPass()
-	{
-		initialize();
-	}
-
-	/**
-	 * Initialize the contents of the frame.
-	 */
-	private void initialize()
 	{
 		frame = new JFrame();
 		frame.setBounds(100, 100, 303, 141);
