@@ -141,11 +141,7 @@ public class GUIAddClass extends JPanel
 		{
 			public void actionPerformed(ActionEvent e)
 			{
-				Course testCourse = new Course(Integer.parseInt(fieldCRN.getText()), fieldCourseName.getText(), Integer.parseInt(fieldSection.getText()), fieldCourseDesc.getText(), fieldDays.getText(), fieldTimes.getText(), Integer.parseInt(fieldCapacity.getText()));
-				Lib.masterCourseList.add(testCourse);
-				clearFields();
-				System.out.println(testCourse);
-				System.out.println("Master Course List Size: " + Lib.masterCourseList.size());
+				System.out.println("Not yet implemented");
 			}
 		});
 		btnCreate.setBounds(218, 347, 239, 23);
