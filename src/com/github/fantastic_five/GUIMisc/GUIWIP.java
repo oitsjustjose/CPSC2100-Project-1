@@ -10,7 +10,7 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 
 import com.github.fantastic_five.StudentRegistrationMain;
-import com.github.fantastic_five.GUI.GUILog;
+import com.github.fantastic_five.GUI.GUILogin;
 import com.github.fantastic_five.GUIAdministrator.GUIAdmin;
 import com.github.fantastic_five.GUIStudent.GUIStudent;
 import com.github.fantastic_five.GUITeacher.GUITeacher;
@@ -35,7 +35,7 @@ public class GUIWIP extends JPanel
 		{
 			public void actionPerformed(ActionEvent e)
 			{
-				StudentRegistrationMain.replaceMainWindowContents(new GUILog());
+				StudentRegistrationMain.replaceMainWindowContents(new GUILogin());
 			}
 		});
 		add(btnViewLoginGui);
