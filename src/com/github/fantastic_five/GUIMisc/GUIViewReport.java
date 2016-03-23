@@ -1,4 +1,4 @@
-package com.github.fantastic_five.GUIAdministrator;
+package com.github.fantastic_five.GUIMisc;
 
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
@@ -11,7 +11,7 @@ import javax.swing.JTable;
 import javax.swing.table.DefaultTableModel;
 
 import com.github.fantastic_five.StudentRegistrationMain;
-import com.github.fantastic_five.GUIMisc.GUILoggedIn;
+import com.github.fantastic_five.GUIStudent.GUIStudent;
 
 @SuppressWarnings("serial")
 public class GUIViewReport extends JPanel
@@ -20,14 +20,19 @@ public class GUIViewReport extends JPanel
 
 	/**
 	 * Create the panel.
+	 * 
+	 * @param previousPanel
+	 *            The panel that needs to be shown when the "Back" button is hit
+	 * @return JPanel with contents for a table containing available classes
+	 * 
 	 */
-	public GUIViewReport()
+	public GUIViewReport(JPanel previousPanel)
 	{
+		setBounds(0, 0, 618, 434);
 		setLayout(null);
-		setBounds(0, 0, 18, 434);
 
 		JScrollPane scrollPane = new JScrollPane();
-		scrollPane.setBounds(10, 11, 586, 364);
+		scrollPane.setBounds(10, 48, 587, 327);
 		add(scrollPane);
 
 		table = new JTable();
@@ -53,15 +58,15 @@ public class GUIViewReport extends JPanel
 			@Override
 			public void mouseClicked(MouseEvent arg0)
 			{
-				StudentRegistrationMain.replaceMainWindowContents(new GUIAdmin());
+				StudentRegistrationMain.replaceMainWindowContents(previousPanel);
 			}
 		});
-		btnBack.setBounds(138, 400, 362, 23);
+		btnBack.setBounds(155, 389, 336, 23);
 		add(btnBack);
 
-		// Adds the loginPanel to our panel
-		JPanel loginPanel = new GUILoggedIn();
-		loginPanel.setBounds(0, 0, 618, 24);
-		add(loginPanel);
+		JButton btnLogOut = new JButton("Log Out");
+		btnLogOut.setBounds(498, 11, 99, 23);
+		add(btnLogOut);
+
 	}
 }

@@ -10,6 +10,9 @@ import javax.swing.JPanel;
 @SuppressWarnings("serial")
 public class GUILoggedIn extends JPanel
 {
+	/**
+	 * @return bar-style GUI for the current logged in user, including log-out button
+	 */
 	public GUILoggedIn()
 	{
 		// Quick and easy childclass for the login bar - this will be added by EVERY GUI to avoid issues

@@ -28,7 +28,7 @@ public class GUIAddClass extends JPanel
 	private JTextField fieldCapacity;
 
 	/**
-	 * Create the panel.
+	 * @return A JPanel containing all fields required to create a class
 	 */
 	public GUIAddClass()
 	{
@@ -155,8 +155,12 @@ public class GUIAddClass extends JPanel
 		JPanel loginPanel = new GUILoggedIn();
 		loginPanel.setBounds(0, 0, 618, 24);
 		add(loginPanel);
+
 	}
 
+	/**
+	 * Clears all of the text fields in the window
+	 */
 	public void clearFields()
 	{
 		fieldCRN.setText("");
@@ -166,6 +170,5 @@ public class GUIAddClass extends JPanel
 		fieldDays.setText("");
 		fieldTimes.setText("");
 		fieldCapacity.setText("");
-
 	}
 }

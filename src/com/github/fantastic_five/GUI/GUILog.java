@@ -1,79 +1,131 @@
+/**
+ * This is the class for the login screen.
+ * This is the first thing a user will see when
+ * he or she starts the program. 
+ */
+
 package com.github.fantastic_five.GUI;
 
 import java.awt.Color;
 import java.awt.Font;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 
 import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JPasswordField;
 import javax.swing.JTextField;
-import javax.swing.SwingConstants;
 
+import com.github.fantastic_five.GUI.GUIForgotPass;
 
+@SuppressWarnings("serial")
 public class GUILog extends JPanel
 {
 	/**
-	 * 
+	 * Fields - Places to enter information
+	 * Private fields - not accessible outside this class
 	 */
 	private JTextField usernameField;
 	private JPasswordField passwordField;
 
-	/**
-	 * Create the panel.
-	 */
+	// Create the login screen panel.
 	public GUILog()
 	{
 		setLayout(null);
 
+		
+		  // usernameField is a new JTextField object
+	      // this is the box the user will type his/her name in
 		usernameField = new JTextField();
-		usernameField.setHorizontalAlignment(SwingConstants.LEFT);
-		usernameField.setForeground(new Color(0, 0, 0));
-		usernameField.setBounds(252, 190, 202, 20);
+		  // Set the dimensions of the field
+		usernameField.setBounds(204, 182, 202, 20);
+		  // Add field to panel
 		add(usernameField);
-//		usernameField.setColumns(10);
 
+		
+		  // passwordField is a new JTextField object
+	      // this is the box the user will type his/her password in
 		passwordField = new JPasswordField();
-		passwordField.setHorizontalAlignment(SwingConstants.LEFT);
-		passwordField.setBounds(252, 221, 202, 20);
+		  // Set the dimensions of the field
+		passwordField.setBounds(204, 227, 202, 20);
+		  // Add field to panel
 		add(passwordField);
 		
+		
+		  // lblWelcomeMSG is a new JLabel object
+		  // lblWelcomeMSG will show up as "WELCOME!"
 		JLabel lblWelcomeMSG = new JLabel("WELCOME!");
+		  // Making the font "Verdana", BOLD text, size 70
 		lblWelcomeMSG.setFont(new Font("Verdana", Font.BOLD, 70));
+		  // Set the dimensions of the label
 		lblWelcomeMSG.setBounds(90, 49, 700, 70);
+		  // Add greeting to panel
 		add(lblWelcomeMSG);
 
-		JLabel lblUsername = new JLabel("Username:");
-		lblUsername.setBounds(137, 189, 300, 20);
-		lblUsername.setFont(new Font("Verdana", Font.PLAIN, 20));
+		
+		  // lblUsername is a new JLabel object
+		  // lblUsername will show up as "USERNAME:"
+		JLabel lblUsername = new JLabel("USERNAME:");
+		  // Set the dimensions of the label
+		lblUsername.setBounds(210, 165, 300, 20);
+		  // Add label to panel
 		add(lblUsername);
 
-		JLabel lblPassword = new JLabel("Password:");
-		lblPassword.setBounds(145, 220, 300, 20);
-		lblPassword.setFont(new Font("Verdana", Font.PLAIN, 20));
+		
+		  // lblPassword is a new JLabel object
+		  // lblPassword will show up as "PASSWORD:"
+		JLabel lblPassword = new JLabel("PASSWORD:");
+		  // Set the dimensions of the label
+		lblPassword.setBounds(211, 209, 300, 20);
+		  // Add label to panel
 		add(lblPassword);
 
-		JButton btnForgotPassword = new JButton("Forgot Password");
-		btnForgotPassword.setBounds(317, 244, 150, 23);
-		btnForgotPassword.setOpaque(false);
+		
+		  // btnForgotPassword is a new JButton object
+		  // btnForgotPassword will show up as "Forgot Password?" without borders
+		JButton btnForgotPassword = new JButton("Forgot Password?");
+		  // Set the dimensions of the button
+    	btnForgotPassword.setBounds(290, 244, 120, 23);
+    	  // Make the button appear as just a clickable text 
 		btnForgotPassword.setContentAreaFilled(false);
-		btnForgotPassword.setBorderPainted(false);
+		  // Make the button borders invisible
+ 		btnForgotPassword.setBorderPainted(false);
+ 		  // Make the text the color RED
 		btnForgotPassword.setForeground(Color.RED);
-		btnForgotPassword.setFont(new Font("Verdana", Font.BOLD, 11));
+		  // When button is clicked, GUIForgotPass is called
+		btnForgotPassword.addMouseListener(new MouseAdapter()
+		{
+			@Override
+			public void mouseClicked(MouseEvent e)
+			{ 
+				{
+					GUIForgotPass.main(null);
+				}
+			}
+		});
+		  // Add button to panel
 		add(btnForgotPassword);
+
 		
+		  // Login is a new JButton object
+		  // Login will show up as a button with "Login" inside it
 		JButton btnLogin = new JButton("Login");
-		btnLogin.setBounds(258, 280, 90, 23);
-		btnLogin.setForeground(Color.BLACK);
-		btnLogin.setFont(new Font("Verdana", Font.BOLD, 15));
+		  // Set the dimensions of the button
+		btnLogin.setBounds(211, 272, 90, 23);
+		  // Add button to panel
 		add(btnLogin);
+
 		
+		  // Login is a new JButton object
+		  // Login will show up as a button with "Login" inside it
 		JButton btnGuest = new JButton("Guest");
-		btnGuest.setBounds(359, 280, 90, 23);
-		btnGuest.setForeground(Color.BLACK);
-		btnGuest.setFont(new Font("Verdana", Font.BOLD, 15));
+	      // Set the dimensions of the button
+		btnGuest.setBounds(310, 272, 90, 23);
+		  // Add button to panel
 		add(btnGuest);
-		
 
 	}
 }

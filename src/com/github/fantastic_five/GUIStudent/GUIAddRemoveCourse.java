@@ -24,45 +24,38 @@ import com.github.fantastic_five.StudentRegistrationMain;
 public class GUIAddRemoveCourse extends JPanel
 {
 	private JTextField textField;
-	private JTextField textField_1;
 	private JButton btnNewButton;
 	private JButton btnNewButton_1;
 	private JButton btnBack;
 	private JLabel lblCrn;
-	private JLabel lblClass;
-	private JLabel lblOr;
 	private JTable table_1;
-	private JTextField textField_2;
+	private JTable table;
 
 	/**
 	 * Create the panel.
 	 */
 	public GUIAddRemoveCourse()
 	{
-		setLayout(null);
 		setBounds(0, 0, 618, 434);
+		setLayout(null);
 
 		textField = new JTextField();
-		textField.setBounds(40, 104, 206, 20);
+		textField.setBounds(85, 67, 206, 20);
 		add(textField);
 		textField.setColumns(10);
 
-		textField_1 = new JTextField();
-		textField_1.setBounds(367, 104, 213, 20);
-		add(textField_1);
-		textField_1.setColumns(10);
-
 		btnNewButton = new JButton("Add");
+		btnNewButton.setBounds(180, 183, 254, 23);
 		btnNewButton.addActionListener(new ActionListener()
 		{
 			public void actionPerformed(ActionEvent e)
 			{
 			}
 		});
-		btnNewButton.setBounds(40, 342, 254, 23);
 		add(btnNewButton);
 
 		btnNewButton_1 = new JButton("Remove");
+		btnNewButton_1.setBounds(180, 345, 254, 23);
 		btnNewButton_1.addActionListener(new ActionListener()
 		{
 			public void actionPerformed(ActionEvent e)
@@ -70,10 +63,10 @@ public class GUIAddRemoveCourse extends JPanel
 				GUIRemove.main(null);
 			}
 		});
-		btnNewButton_1.setBounds(326, 342, 254, 23);
 		add(btnNewButton_1);
 
 		btnBack = new JButton("Back");
+		btnBack.setBounds(41, 389, 128, 23);
 		btnBack.addActionListener(new ActionListener()
 		{
 			public void actionPerformed(ActionEvent e)
@@ -88,55 +81,38 @@ public class GUIAddRemoveCourse extends JPanel
 				StudentRegistrationMain.replaceMainWindowContents(new GUIStudent());
 			}
 		});
-
-		btnBack.setBounds(40, 385, 128, 23);
 		add(btnBack);
 
 		JLabel lblSearchBy = new JLabel("Search By:");
+		lblSearchBy.setBounds(41, 32, 116, 20);
 		lblSearchBy.setForeground(Color.GRAY);
 		lblSearchBy.setFont(new Font("Verdana", Font.BOLD, 16));
-		lblSearchBy.setBounds(40, 41, 116, 20);
 		add(lblSearchBy);
 
 		lblCrn = new JLabel("CRN");
+		lblCrn.setBounds(41, 69, 46, 14);
 		lblCrn.setFont(new Font("Verdana", Font.BOLD, 12));
-		lblCrn.setBounds(40, 79, 46, 14);
 		add(lblCrn);
-
-		lblClass = new JLabel("Class");
-		lblClass.setFont(new Font("Verdana", Font.BOLD, 12));
-		lblClass.setBounds(367, 79, 46, 14);
-		add(lblClass);
-
-		lblOr = new JLabel("OR");
-		lblOr.setForeground(Color.GRAY);
-		lblOr.setFont(new Font("Verdana", Font.BOLD, 16));
-		lblOr.setBounds(297, 97, 46, 28);
-		add(lblOr);
 
 		JButton btnLogOut = new JButton("Log Out");
 		btnLogOut.setBounds(481, 13, 99, 23);
 		add(btnLogOut);
 
 		JScrollPane scrollPane_1 = new JScrollPane();
-
-		scrollPane_1.setBounds(40, 180, 540, 151);
+		scrollPane_1.setBounds(41, 227, 540, 107);
 		add(scrollPane_1);
 
 		table_1 = new JTable();
-		table_1.setModel(new DefaultTableModel(new Object[][] { { null, null, null, null, null, null }, { null, null, null, null, null, null }, { null, null, null, null, null, null }, { null, null, null, null, null, null }, { null, null, null, null, null, null }, { null, null, null, null, null, null }, { null, null, null, null, null, null }, { null, null, null, null, null, null }, { null, null, null, null, null, null }, { null, null, null, null, null, null }, { null, null, null, null, null, null }, { null, null, null, null, null, null }, { null, null, null, null, null, null }, { null, null, null, null, null, null }, { null, null, null, null, null, null }, { null, null, null, null, null,
-						null },
-				{ null, null, null, null, null, null },
-				{ null, null, null, null, null, null },
-				{ null, null, null, null, null, null },
-				{ null, null, null, null, null, null }, }, new String[]
-		{ "CRN", "Class", "Capacity", "Remaining", "Teacher", "Time", "Room" }));
+		table_1.setModel(new DefaultTableModel(new Object[][] { { null, null, null, null, null, null, null }, { null, null, null, null, null, null, null }, { null, null, null, null, null, null, null }, { null, null, null, null, null, null, null }, { null, null, null, null, null, null, null }, }, new String[] { "CRN", "Class", "Capacity", "Remaining", "Time", "Day", "Teacher", "Room" }));
 		scrollPane_1.setViewportView(table_1);
 
-		textField_2 = new JTextField();
-		textField_2.setBounds(40, 135, 540, 34);
-		add(textField_2);
-		textField_2.setColumns(10);
+		JScrollPane scrollPane = new JScrollPane();
+		scrollPane.setBounds(41, 113, 539, 59);
+		add(scrollPane);
+
+		table = new JTable();
+		table.setModel(new DefaultTableModel(new Object[][] { { null, null, null, null, null, null, null }, { null, null, null, null, null, null, null }, }, new String[] { "CRN", "Class", "Capacity", "Remaining", "Time", "Day", "Teacher", "Room" }));
+		scrollPane.setViewportView(table);
 
 	}
 }

@@ -1,5 +1,4 @@
-package com.github.fantastic_five.GUIStudent;
-//Alay
+package com.github.fantastic_five.GUITeacher;
 
 import java.awt.Color;
 import java.awt.Font;
@@ -14,16 +13,14 @@ import javax.swing.JPanel;
 import javax.swing.SwingConstants;
 
 import com.github.fantastic_five.StudentRegistrationMain;
-import com.github.fantastic_five.GUIMisc.GUIViewReport;
 
 @SuppressWarnings("serial")
-public class GUIStudent extends JPanel
+public class GUITeacher extends JPanel
 {
-
 	/**
-	 * Create the panel.
+	 * @return A window containing the main actions an Administrator can take
 	 */
-	public GUIStudent()
+	public GUITeacher()
 	{
 		setLayout(null);
 		setBounds(0, 0, 618, 434);
@@ -34,26 +31,28 @@ public class GUIStudent extends JPanel
 			@Override
 			public void mouseClicked(MouseEvent e)
 			{
-				StudentRegistrationMain.replaceMainWindowContents(new GUIViewReport(new GUIStudent()));
+				StudentRegistrationMain.replaceMainWindowContents(new GUIViewCourse());
 			}
 		});
 
 		btnView.setBounds(232, 149, 150, 23);
 		add(btnView);
 
+		// Button & logic for removing courses
 		JButton btnAddremoveCourse = new JButton("Add / Remove Course");
 		btnAddremoveCourse.addMouseListener(new MouseAdapter()
 		{
 			@Override
 			public void mouseClicked(MouseEvent e)
 			{
-				StudentRegistrationMain.replaceMainWindowContents(new GUIAddRemoveCourse());
+//				StudentRegistrationMain.replaceMainWindowContents(new GUIAddDropCourse());
 			}
 		});
 
 		btnAddremoveCourse.setBounds(232, 204, 150, 23);
 		add(btnAddremoveCourse);
 
+		// Button for viewing schedules
 		JButton btnViewSchedule = new JButton("View Schedule");
 		btnViewSchedule.addActionListener(new ActionListener()
 		{
@@ -65,13 +64,14 @@ public class GUIStudent extends JPanel
 		btnViewSchedule.setBounds(232, 259, 150, 23);
 		add(btnViewSchedule);
 
-		JLabel lblStudent = new JLabel("Student");
-		lblStudent.setBounds(232, 78, 46, 14);
-		lblStudent.setForeground(Color.GRAY);
-		lblStudent.setFont(new Font("Verdana", Font.BOLD, 16));
-		lblStudent.setHorizontalAlignment(SwingConstants.CENTER);
-		lblStudent.setBounds(232, 60, 150, 23);
-		add(lblStudent);
+		// Panel label
+		JLabel lblTeacher = new JLabel("Teacher");
+		lblTeacher.setBounds(232, 78, 46, 14);
+		lblTeacher.setForeground(Color.GRAY);
+		lblTeacher.setFont(new Font("Verdana", Font.BOLD, 16));
+		lblTeacher.setHorizontalAlignment(SwingConstants.CENTER);
+		lblTeacher.setBounds(232, 60, 150, 23);
+		add(lblTeacher);
 
 	}
 }

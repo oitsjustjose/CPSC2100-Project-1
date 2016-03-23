@@ -12,13 +12,14 @@ import javax.swing.SwingConstants;
 
 import com.github.fantastic_five.StudentRegistrationMain;
 import com.github.fantastic_five.GUIMisc.GUILoggedIn;
-import com.github.fantastic_five.GUIStudent.GUIViewCourse;
-
-//TODO: Implement teacher / student view
+import com.github.fantastic_five.GUIMisc.GUIViewReport;
 
 @SuppressWarnings("serial")
 public class GUIAdmin extends JPanel
 {
+	/**
+	 * @return A window containing the main actions an Administrator can take
+	 */
 	public GUIAdmin()
 	{
 		setLayout(null);
@@ -48,14 +49,14 @@ public class GUIAdmin extends JPanel
 		});
 		add(btnRemoveCourseOffering);
 
-		// Button for reports view (NYE)
+		// Button for reports view
 		JButton btnViewReport = new JButton("View Report");
 		btnViewReport.setBounds(178, 254, 243, 23);
 		btnViewReport.addActionListener(new ActionListener()
 		{
 			public void actionPerformed(ActionEvent e)
 			{
-				StudentRegistrationMain.replaceMainWindowContents(new GUIViewReport());
+				StudentRegistrationMain.replaceMainWindowContents(new GUIViewReport(new GUIAdmin()));
 			}
 		});
 		add(btnViewReport);

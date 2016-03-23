@@ -1,5 +1,4 @@
-package com.github.fantastic_five.GUIStudent;
-//Alay 
+package com.github.fantastic_five.GUITeacher;
 
 import java.awt.Color;
 import java.awt.EventQueue;
@@ -11,9 +10,8 @@ import javax.swing.JButton;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
-public class GUIRemove
+public class GUIRemoveClass
 {
-
 	private JFrame frame;
 
 	/**
@@ -27,7 +25,7 @@ public class GUIRemove
 			{
 				try
 				{
-					GUIRemove window = new GUIRemove();
+					GUIRemoveClass window = new GUIRemoveClass();
 					window.frame.setVisible(true);
 				}
 				catch (Exception e)
@@ -41,7 +39,7 @@ public class GUIRemove
 	/**
 	 * Create the application.
 	 */
-	public GUIRemove()
+	public GUIRemoveClass()
 	{
 		initialize();
 	}
@@ -80,5 +78,4 @@ public class GUIRemove
 		btnNo.setBounds(192, 42, 89, 23);
 		frame.getContentPane().add(btnNo);
 	}
-
 }
