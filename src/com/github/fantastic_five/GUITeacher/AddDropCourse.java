@@ -32,7 +32,7 @@ public class AddDropCourse extends JPanel
 	private JTextField textField2;
 
 	/**
-	 * Creates the panel.
+	 * @return A JPanel containing all fields required to create a class
 	 */
 	public AddDropCourse()
 	{
@@ -82,7 +82,8 @@ public class AddDropCourse extends JPanel
 			}
 		});
 		add(btnBack);
-
+		
+		// Search button & search criteria
 		JLabel lblSearchBy = new JLabel("Search By:");
 		lblSearchBy.setBounds(41, 32, 116, 20);
 		lblSearchBy.setForeground(Color.GRAY);
