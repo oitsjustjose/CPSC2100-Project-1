@@ -10,6 +10,8 @@ import javax.swing.SwingUtilities;
 import javax.swing.UIManager;
 import javax.swing.UnsupportedLookAndFeelException;
 
+import com.github.fantastic_five.GUI.GUILog;
+import com.github.fantastic_five.GUI.GUILogin;
 import com.github.fantastic_five.GUIStudent.GUIStudent;
 
 /**
@@ -41,7 +43,7 @@ public class StudentRegistrationMain
 			{
 				// Put anything that needs to run in main here!
 				createMainWindow();
-				replaceMainWindowContents(new GUIStudent());
+				replaceMainWindowContents(new GUILog());
 			}
 		};
 		SwingUtilities.invokeLater(r);
