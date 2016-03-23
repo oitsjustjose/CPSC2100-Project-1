@@ -43,7 +43,7 @@ public class StudentRegistrationMain
 			{
 				// Put anything that needs to run in main here!
 				createMainWindow();
-				replaceMainWindowContents(new GUIWIP());
+				replaceMainWindowContents(new GUILog());
 			}
 		};
 		SwingUtilities.invokeLater(r);
