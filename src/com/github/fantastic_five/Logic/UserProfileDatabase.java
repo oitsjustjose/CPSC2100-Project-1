@@ -1,6 +1,5 @@
-package com.github.fantastic_five;
+package com.github.fantastic_five.Logic;
 
-import java.security.InvalidParameterException;
 import java.util.HashSet;
 
 /**
@@ -62,12 +61,35 @@ public class UserProfileDatabase
 		return hasUser;
 	}
 
+<<<<<<< HEAD:src/com/github/fantastic_five/UserProfileDatabase.java
+	/**
+	 * Returns a userProfile with the specified userID and password, if such a userProfile exists in the database
+	 * @param userID The userID of the userProfile being returned
+	 * @param password The password of the userProfile being returned
+	 * @return The userProfile associated with the explicit parameters. Returns null if the userID does not exist or the password is incorrect.
+	 */
+	public UserProfile login(String userID, String password)
+	{
+		UserProfile user = null;
+		for (UserProfile e : users)
+		{
+			if (e.getUserID().equals(userID))
+			{
+				if (e.passwordIs(password))
+				{
+					user = e;
+				}
+				break;
+			}
+=======
 	public UserProfile login(String userID, String password)
 	{
 		for (UserProfile e : users)
 		{
+>>>>>>> origin/master:src/com/github/fantastic_five/Logic/UserProfileDatabase.java
 		}
-		return null;
+		
+		return user;
 	}
 
 }
