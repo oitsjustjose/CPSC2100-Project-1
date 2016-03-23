@@ -10,7 +10,7 @@ import javax.swing.JButton;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
-public class Remove
+public class GUIRemoveClass
 {
 	private JFrame frame;
 
@@ -25,7 +25,7 @@ public class Remove
 			{
 				try
 				{
-					Remove window = new Remove();
+					GUIRemoveClass window = new GUIRemoveClass();
 					window.frame.setVisible(true);
 				}
 				catch (Exception e)
@@ -39,7 +39,7 @@ public class Remove
 	/**
 	 * Create the application.
 	 */
-	public Remove()
+	public GUIRemoveClass()
 	{
 		initialize();
 	}

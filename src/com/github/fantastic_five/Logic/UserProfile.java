@@ -1,4 +1,4 @@
-package com.github.fantastic_five;
+package com.github.fantastic_five.Logic;
 
 /**
  * The account information for a person registered with the school.
