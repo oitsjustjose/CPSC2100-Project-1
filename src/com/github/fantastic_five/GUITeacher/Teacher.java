@@ -17,7 +17,7 @@ import com.github.fantastic_five.StudentRegistrationMain;
 public class Teacher extends JPanel
 {
 	/**
-	 * Create the panel.
+	 * @return A window containing the main actions an Administrator can take
 	 */
 	public Teacher()
 	{
@@ -36,7 +36,8 @@ public class Teacher extends JPanel
 
 		btnView.setBounds(232, 149, 150, 23);
 		add(btnView);
-
+		
+		// Button & logic for removing courses
 		JButton btnAddremoveCourse = new JButton("Add / Remove Course");
 		btnAddremoveCourse.addMouseListener(new MouseAdapter()
 		{
@@ -49,7 +50,8 @@ public class Teacher extends JPanel
 
 		btnAddremoveCourse.setBounds(232, 204, 150, 23);
 		add(btnAddremoveCourse);
-
+		
+		// Button for viewing schedules
 		JButton btnViewSchedule = new JButton("View Schedule");
 		btnViewSchedule.addActionListener(new ActionListener()
 		{
@@ -60,7 +62,8 @@ public class Teacher extends JPanel
 		});
 		btnViewSchedule.setBounds(232, 259, 150, 23);
 		add(btnViewSchedule);
-
+		
+		// Panel label
 		JLabel lblTeacher = new JLabel("Teacher");
 		lblTeacher.setBounds(232, 78, 46, 14);
 		lblTeacher.setForeground(Color.GRAY);
