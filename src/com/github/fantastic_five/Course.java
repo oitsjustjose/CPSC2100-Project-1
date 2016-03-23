@@ -1,4 +1,4 @@
-package com.github.fantastic_five.Logic;
+package com.github.fantastic_five;
 
 import java.security.InvalidParameterException;
 import java.util.HashSet;
