@@ -19,7 +19,9 @@ import javax.swing.JPanel;
 import javax.swing.JPasswordField;
 import javax.swing.JTextField;
 
+import com.github.fantastic_five.StudentRegistrationMain;
 import com.github.fantastic_five.GUI.GUIForgotPass;
+import com.github.fantastic_five.GUIMisc.GUIWIP;
 
 @SuppressWarnings("serial")
 public class GUILog extends JPanel
@@ -127,5 +129,16 @@ public class GUILog extends JPanel
 		  // Add button to panel
 		add(btnGuest);
 
+		//@TODO: Remove this later:
+		JButton btnBackToWip = new JButton("Back to WIP Menu");
+		btnBackToWip.setBounds(489, 400, 119, 23);
+		btnBackToWip.addActionListener(new ActionListener()
+		{
+			public void actionPerformed(ActionEvent e)
+			{
+				StudentRegistrationMain.replaceMainWindowContents(new GUIWIP());
+			}
+		});		
+		add(btnBackToWip);
 	}
 }

@@ -10,6 +10,7 @@ import javax.swing.SwingUtilities;
 import javax.swing.UIManager;
 import javax.swing.UnsupportedLookAndFeelException;
 
+import com.github.fantastic_five.GUIMisc.GUIWIP;
 import com.github.fantastic_five.GUIStudent.GUIStudent;
 
 /**

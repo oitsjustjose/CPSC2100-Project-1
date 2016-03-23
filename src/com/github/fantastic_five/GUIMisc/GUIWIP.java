@@ -1,4 +1,4 @@
-package com.github.fantastic_five;
+package com.github.fantastic_five.GUIMisc;
 
 import java.awt.Color;
 import java.awt.Font;
@@ -9,6 +9,7 @@ import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
+import com.github.fantastic_five.StudentRegistrationMain;
 import com.github.fantastic_five.GUI.GUILog;
 import com.github.fantastic_five.GUIAdministrator.GUIAdmin;
 import com.github.fantastic_five.GUIStudent.GUIStudent;
