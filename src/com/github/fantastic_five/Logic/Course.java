@@ -127,6 +127,7 @@ public class Course
 	{
 		boolean coursesConflict;
 		
+		@SuppressWarnings("unchecked")
 		HashSet<Day> intersection = (HashSet<Day>) days.clone();
 		intersection.retainAll(other.days);
 		

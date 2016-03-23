@@ -15,7 +15,7 @@ public class GUILoggedIn extends JPanel
 	 */
 	public GUILoggedIn()
 	{
-		// Quick and easy childclass for the login bar - this will be added by EVERY GUI to avoid issues
+		// Quick and easy child class for the login bar - this will be added by EVERY GUI to avoid issues
 		setLayout(null);
 		setBounds(0, 0, 618, 24);
 

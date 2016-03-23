@@ -14,6 +14,7 @@ import javax.swing.table.DefaultTableModel;
 
 import com.github.fantastic_five.StudentRegistrationMain;
 
+@SuppressWarnings("serial")
 public class GUIViewSchedule extends JPanel
 {
 

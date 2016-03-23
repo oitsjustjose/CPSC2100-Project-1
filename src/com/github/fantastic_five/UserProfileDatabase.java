@@ -13,7 +13,9 @@ import java.util.HashSet;
 	 * @return Returns true iff hasUser(user.getUserID)
 	 */
 	public boolean addUserProfile(UserProfile user)
-@@ -59,14 +60,29 @@ public class UserProfileDatabase
+	{
+public class UserProfileDatabase
+{
 		}
 		return hasUser;
 	}

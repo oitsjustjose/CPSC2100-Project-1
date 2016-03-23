@@ -11,7 +11,6 @@ import javax.swing.JTable;
 import javax.swing.table.DefaultTableModel;
 
 import com.github.fantastic_five.StudentRegistrationMain;
-import com.github.fantastic_five.GUIStudent.GUIStudent;
 
 @SuppressWarnings("serial")
 public class GUIViewReport extends JPanel
