@@ -1,10 +1,8 @@
 package com.github.fantastic_five.GUITeacher;
 
 import java.awt.Color;
-import java.awt.EventQueue;
 import java.awt.Font;
 
-import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
@@ -16,8 +14,6 @@ import javax.swing.table.DefaultTableModel;
 import com.github.fantastic_five.StudentRegistrationMain;
 import com.github.fantastic_five.GUIMisc.GUILoggedIn;
 import com.github.fantastic_five.GUIStudent.GUIRemove;
-import com.github.fantastic_five.GUIStudent.GUIStudent;
-
 import javax.swing.JButton;
 
 import java.awt.event.ActionEvent;
@@ -25,6 +21,7 @@ import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
+@SuppressWarnings("serial")
 public class GUIAddRemoveClass extends JPanel
 {
 	private JTextField textField;

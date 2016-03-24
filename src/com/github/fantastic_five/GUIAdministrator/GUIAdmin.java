@@ -16,7 +16,6 @@ import com.github.fantastic_five.StudentRegistrationMain;
 import com.github.fantastic_five.GUIMisc.GUILoggedIn;
 import com.github.fantastic_five.GUIMisc.GUIViewReport;
 import com.github.fantastic_five.GUIMisc.GUIWIP;
-import com.github.fantastic_five.GUIStudent.GUIViewCourses;
 
 @SuppressWarnings("serial")
 public class GUIAdmin extends JPanel

@@ -15,9 +15,7 @@ import javax.swing.SwingConstants;
 
 import com.github.fantastic_five.StudentRegistrationMain;
 import com.github.fantastic_five.GUIMisc.GUILoggedIn;
-import com.github.fantastic_five.GUIMisc.GUIViewReport;
 import com.github.fantastic_five.GUIMisc.GUIWIP;
-import com.github.fantastic_five.GUITeacher.GUIViewCourse;
 
 @SuppressWarnings("serial")
 public class GUIStudent extends JPanel

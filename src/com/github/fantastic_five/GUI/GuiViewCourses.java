@@ -15,7 +15,6 @@ import javax.swing.table.DefaultTableModel;
 
 import com.github.fantastic_five.StudentRegistrationMain;
 import com.github.fantastic_five.GUIMisc.GUILoggedIn;
-import com.github.fantastic_five.GUIStudent.GUIStudent;
 
 @SuppressWarnings("serial")
 public class GuiViewCourses extends JPanel
