@@ -29,7 +29,7 @@ public class GUIAdmin extends JPanel
 		setBounds(0, 0, 618, 434);
 		
 		
-		//BUtton View Courses 
+		//Button & Logic for View Courses 
 		JButton btnView = new JButton("View Courses");
 		btnView.addMouseListener(new MouseAdapter()
 		{
@@ -39,7 +39,7 @@ public class GUIAdmin extends JPanel
 				StudentRegistrationMain.replaceMainWindowContents(new GUIviewCourses());
 			}
 		});
-
+		
 		btnView.setBounds(178, 152, 243, 23);
 		add(btnView);
 
@@ -78,6 +78,31 @@ public class GUIAdmin extends JPanel
 			}
 		});
 		add(btnViewReport);
+		
+		//Button & Logic for Enrolled Student View
+				JButton btnViewEnrolledStudents = new JButton("View Enrolled Students");
+				btnViewEnrolledStudents.setBounds(178, 290, 243, 23);
+				btnViewEnrolledStudents.addActionListener(new ActionListener()
+				{
+					public void actionPerformed(ActionEvent e)
+					{
+						StudentRegistrationMain.replaceMainWindowContents(new GUIViewStudent());
+					}
+				});
+				add(btnViewEnrolledStudents);
+				
+		//Button & Logic for Teacher Staff View
+				JButton btnViewTeacher = new JButton("View Teacher Staff");
+				btnViewTeacher.setBounds(178, 326, 243, 23);
+				btnViewTeacher.addActionListener(new ActionListener()
+				{
+					public void actionPerformed(ActionEvent e)
+					{
+						StudentRegistrationMain.replaceMainWindowContents(new GUIViewTeacher());
+					}
+				});
+				add(btnViewTeacher);
+		
 
 		// Adds the login panel
 		JPanel loginPanel = new GUILoggedIn();
