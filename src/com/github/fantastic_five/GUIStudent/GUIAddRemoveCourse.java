@@ -118,7 +118,8 @@ public class GUIAddRemoveCourse extends JPanel
 		add(scrollPane_1);
 		
 		/**
-		 * Creates a Table
+		 * Creates a Table which shall display result of the course that 
+		 * user has searched for 
 		 */
 		table_1 = new JTable();
 		table_1.setModel(new DefaultTableModel(new Object[][] { { null, null, null, null, null, null, null }, { null, null, null, null, null, null, null }, { null, null, null, null, null, null, null }, { null, null, null, null, null, null, null }, { null, null, null, null, null, null, null }, }, new String[] { "CRN", "Class", "Capacity", "Remaining", "Time", "Day", "Teacher", "Room" }));
@@ -132,7 +133,7 @@ public class GUIAddRemoveCourse extends JPanel
 		add(scrollPane);
 		
 		/**
-		 * Creates an another Table
+		 * Creates an another Table which shall course that user has added. 
 		 */
 		table = new JTable();
 		table.setModel(new DefaultTableModel(new Object[][] { { null, null, null, null, null, null, null }, { null, null, null, null, null, null, null }, }, new String[] { "CRN", "Class", "Capacity", "Remaining", "Time", "Day", "Teacher", "Room" }));
