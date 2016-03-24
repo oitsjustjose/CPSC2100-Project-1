@@ -27,7 +27,7 @@ public class GUIStudent extends JPanel
 
 	/**
 	 * This GUIStudent class extends the JPanel. This is the first display
-	 * that the Student user will see when he or she login to his/her account.
+	 * that the Student user will see when he/she logs in to his/her account.
 	 * @return A window Containing the main actions a student can do
 	 */
 	public GUIStudent()

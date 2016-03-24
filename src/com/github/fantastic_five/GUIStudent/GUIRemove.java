@@ -1,5 +1,8 @@
 package com.github.fantastic_five.GUIStudent;
-//Alay 
+/**
+ * @author Alay Patel (leader)
+ * Group 5 
+ */
 
 import java.awt.Color;
 import java.awt.EventQueue;
@@ -13,10 +16,10 @@ import java.awt.event.MouseEvent;
 
 public class GUIRemove
 {
-
 	private JFrame frame;
 
 	/**
+	 * This window displays warning if the user is certain to make confirmation on the changes. 
 	 * Launch the application.
 	 */
 	public static void main(String[] args)
@@ -29,14 +32,14 @@ public class GUIRemove
 				{
 					GUIRemove window = new GUIRemove();
 					window.frame.setVisible(true);
-				}
+				}//end of try
 				catch (Exception e)
 				{
 					e.printStackTrace();
-				}
-			}
+				}//end of catch
+			}//end of tun
 		});
-	}
+	}//end of invokelater
 
 	/**
 	 * Create the application.
@@ -75,10 +78,9 @@ public class GUIRemove
 			public void mouseClicked(MouseEvent arg0)
 			{
 				frame.dispose();
-			}
-		});
+			}//end of mouseClicked
+		});//end of mouseListener
 		btnNo.setBounds(192, 42, 89, 23);
 		frame.getContentPane().add(btnNo);
-	}
-
-}
+	}//end of main
+}//end of GUIremove

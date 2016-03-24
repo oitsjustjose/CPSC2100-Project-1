@@ -39,8 +39,8 @@ public class GUIAddRemoveCourse extends JPanel
 	private JTable table;
 
 	/**
-	 * This GUI class displays the screen for the add and remove courses.
-	 * Here student can search course by CRN that the student user want to
+	 * This GUI class displays the panel for adding and removing courses.
+	 * Here student can search course by CRN that he/she want to
 	 * add or remove, and would allow them to do so. 
 	 */
 	public GUIAddRemoveCourse()
@@ -81,6 +81,9 @@ public class GUIAddRemoveCourse extends JPanel
 		});//end of the actionPerformed 
 		add(btnNewButton_1);
 
+		/**
+		 * adds a back button. 
+		 */
 		btnBack = new JButton("Back");
 		btnBack.setBounds(41, 389, 128, 23);		
 		btnBack.addMouseListener(new MouseAdapter()
@@ -94,7 +97,7 @@ public class GUIAddRemoveCourse extends JPanel
 		add(btnBack);
 
 		/**
-		 * Adds a label named, "Search By"
+		 * adds a label named, "Search By"
 		 */
 		JLabel lblSearchBy = new JLabel("Search By:");
 		lblSearchBy.setBounds(41, 56, 116, 20);
@@ -140,7 +143,7 @@ public class GUIAddRemoveCourse extends JPanel
 		scrollPane.setViewportView(table);
 		
 		/**
-		 * Adds an GUILogIn
+		 * Adds a GUILogIn
 		 */
 		JPanel loginPanel = new GUILoggedIn();
 		loginPanel.setBounds(0, 0, 618, 24);

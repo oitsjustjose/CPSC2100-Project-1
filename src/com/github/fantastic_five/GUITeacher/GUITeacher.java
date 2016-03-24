@@ -1,5 +1,8 @@
 package com.github.fantastic_five.GUITeacher;
-
+/**
+ * @author Christian Phillips
+ * Group 5 
+ */
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.event.ActionEvent;
@@ -19,13 +22,17 @@ import com.github.fantastic_five.GUIMisc.GUIWIP;
 public class GUITeacher extends JPanel
 {
 	/**
-	 * @return A window containing the main actions an Administrator can take
+	 * The GUITeacher class extends the JPanel. This is the first 
+	 * display that the Teacher user will see when he/she logs in
+	 * to his/her account.
+	 * @return A window Containing the main actions a Teacher can do 
 	 */
 	public GUITeacher()
 	{
 		setLayout(null);
 		setBounds(0, 0, 618, 434);
 
+		//Button & Logic for View Course
 		JButton btnView = new JButton("View Course");
 		btnView.addMouseListener(new MouseAdapter()
 		{

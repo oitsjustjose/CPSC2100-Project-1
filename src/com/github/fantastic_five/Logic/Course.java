@@ -1,5 +1,8 @@
 package com.github.fantastic_five.Logic;
-
+/**
+ * @author Clark Stephen
+ * Group 5
+ */
 import java.security.InvalidParameterException;
 import java.util.HashSet;
 

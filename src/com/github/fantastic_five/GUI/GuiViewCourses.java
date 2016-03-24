@@ -78,7 +78,7 @@ public class GuiViewCourses extends JPanel
 		add(btnBack);
 		
 		/**
-		 * Adds the login Panel
+		 * Adds a login Panel
 		 */
 		JPanel loginPanel = new GUILoggedIn();
 		loginPanel.setBounds(0, 0, 618, 24);

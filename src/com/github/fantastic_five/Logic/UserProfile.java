@@ -3,7 +3,7 @@ package com.github.fantastic_five.Logic;
 /**
  * The account information for a person registered with the school.
  * 
- * @author Fantastic Five
+ * @author Clark Stephen Group 5
  *
  */
 public class UserProfile

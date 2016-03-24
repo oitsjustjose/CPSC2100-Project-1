@@ -27,7 +27,7 @@ import com.github.fantastic_five.GUIMisc.GUILoggedIn;
 public class GUIViewSchedule extends JPanel
 {
 	/**
-	 * This GUI that would display student's individual schedule 
+	 * This GUI that shall display student's individual schedule 
 	 * of courses that he/she has chosen
 	 */
 	public GUIViewSchedule()
