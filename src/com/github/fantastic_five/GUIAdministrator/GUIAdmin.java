@@ -37,7 +37,7 @@ public class GUIAdmin extends JPanel
 			@Override
 			public void mouseClicked(MouseEvent e)
 			{
-				StudentRegistrationMain.replaceMainWindowContents(new GUIViewCourses());
+				StudentRegistrationMain.replaceMainWindowContents(new GUIviewCourses());
 			}
 		});
 

@@ -1,4 +1,8 @@
 /**
+ * 
+ * @author Steven Hullander
+ * Group 5
+ * 
  * This is the class for the forgot password screen
  * This class generates a new pop-up window that 
  * prompts the user on how to retrieve his or her password.

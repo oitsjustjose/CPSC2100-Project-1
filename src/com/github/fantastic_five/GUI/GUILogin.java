@@ -1,7 +1,11 @@
 /**
+ * @author Steven Hullander
+ * Group 5
+ * 
  * This is the class for the login screen.
  * This is the first thing a user will see when
  * he or she starts the program. 
+ * 
  */
 
 package com.github.fantastic_five.GUI;
@@ -26,14 +30,11 @@ import com.github.fantastic_five.GUIMisc.GUIWIP;
 @SuppressWarnings("serial")
 public class GUILogin extends JPanel
 {
-	/**
-	 * Fields - Places to enter information
-	 * Private fields - not accessible outside this class
-	 */
+	  // private instance variables
 	private JTextField usernameField;
 	private JPasswordField passwordField;
 
-	// Create the login screen panel.
+	  // Create the login screen panel.
 	public GUILogin()
 	{
 		setLayout(null);
@@ -55,8 +56,7 @@ public class GUILogin extends JPanel
 		passwordField.setBounds(204, 227, 202, 20);
 		  // Add field to panel
 		add(passwordField);
-		
-		
+				
 		  // lblWelcomeMSG is a new JLabel object
 		  // lblWelcomeMSG will show up as "WELCOME!"
 		JLabel lblWelcomeMSG = new JLabel("WELCOME!");

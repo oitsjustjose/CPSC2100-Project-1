@@ -22,12 +22,12 @@ import com.github.fantastic_five.StudentRegistrationMain;
 import com.github.fantastic_five.GUIMisc.GUILoggedIn;
 
 @SuppressWarnings("serial")
-public class GUIViewCourses extends JPanel
+public class GUIviewCourses extends JPanel
 {
 	// Private instance variables
 	private JTable table;
 
-	public GUIViewCourses()
+	public GUIviewCourses()
 	{
 		setBounds(0, 0, 618, 434);
 		setLayout(null);
