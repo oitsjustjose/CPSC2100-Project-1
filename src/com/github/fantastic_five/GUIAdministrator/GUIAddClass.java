@@ -118,7 +118,7 @@ public class GUIAddClass extends JPanel
 		lblCreateCourse.setForeground(Color.GRAY);
 		lblCreateCourse.setFont(new Font("Verdana", Font.BOLD, 16));
 		lblCreateCourse.setHorizontalAlignment(SwingConstants.CENTER);
-		lblCreateCourse.setBounds(178, 76, 243, 21);
+		lblCreateCourse.setBounds(188, 56, 243, 21);
 		add(lblCreateCourse);
 
 		// Back button & implementation
@@ -130,11 +130,11 @@ public class GUIAddClass extends JPanel
 				StudentRegistrationMain.replaceMainWindowContents(new GUIAdmin());
 			}
 		});
-		btnNewButton.setBounds(119, 347, 89, 23);
+		btnNewButton.setBounds(10, 386, 128, 23);
 		add(btnNewButton);
 
 		// Create button TODO: add logic
-		JButton btnCreate = new JButton("Create Course Offering");
+		JButton btnCreate = new JButton("Create");
 		btnCreate.addActionListener(new ActionListener()
 		{
 			public void actionPerformed(ActionEvent e)
@@ -142,7 +142,7 @@ public class GUIAddClass extends JPanel
 				System.out.println("Not yet implemented");
 			}
 		});
-		btnCreate.setBounds(218, 347, 239, 23);
+		btnCreate.setBounds(240, 300, 217, 23);
 		add(btnCreate);
 
 		// Adds the login panel to this window

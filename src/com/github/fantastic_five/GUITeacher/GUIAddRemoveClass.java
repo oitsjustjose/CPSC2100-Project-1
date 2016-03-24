@@ -1,17 +1,11 @@
-package com.github.fantastic_five.GUIStudent;
+package com.github.fantastic_five.GUITeacher;
 
 import java.awt.Color;
+import java.awt.EventQueue;
 import java.awt.Font;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.awt.event.MouseAdapter;
-import java.awt.event.MouseEvent;
 
-import javax.swing.JButton;
+import javax.swing.JFrame;
 import javax.swing.JLabel;
-
-//Alay
-
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTable;
@@ -21,9 +15,17 @@ import javax.swing.table.DefaultTableModel;
 
 import com.github.fantastic_five.StudentRegistrationMain;
 import com.github.fantastic_five.GUIMisc.GUILoggedIn;
+import com.github.fantastic_five.GUIStudent.GUIRemove;
+import com.github.fantastic_five.GUIStudent.GUIStudent;
 
-@SuppressWarnings("serial")
-public class GUIAddRemoveCourse extends JPanel
+import javax.swing.JButton;
+
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
+
+public class GUIAddRemoveClass extends JPanel
 {
 	private JTextField textField;
 	private JButton btnNewButton;
@@ -36,7 +38,7 @@ public class GUIAddRemoveCourse extends JPanel
 	/**
 	 * Create the panel.
 	 */
-	public GUIAddRemoveCourse()
+	public GUIAddRemoveClass()
 	{
 		setBounds(0, 0, 618, 434);
 		setLayout(null);
@@ -80,7 +82,7 @@ public class GUIAddRemoveCourse extends JPanel
 			@Override
 			public void mouseClicked(MouseEvent e)
 			{
-				StudentRegistrationMain.replaceMainWindowContents(new GUIStudent());
+				StudentRegistrationMain.replaceMainWindowContents(new GUITeacher());
 			}
 		});
 		add(btnBack);

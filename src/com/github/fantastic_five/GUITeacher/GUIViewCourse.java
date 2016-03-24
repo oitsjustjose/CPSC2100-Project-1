@@ -1,16 +1,20 @@
 package com.github.fantastic_five.GUITeacher;
 
+import java.awt.Color;
+import java.awt.Font;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
 import javax.swing.JButton;
-
+import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTable;
+import javax.swing.SwingConstants;
 import javax.swing.table.DefaultTableModel;
 
 import com.github.fantastic_five.StudentRegistrationMain;
+import com.github.fantastic_five.GUIMisc.GUILoggedIn;
 
 @SuppressWarnings("serial")
 public class GUIViewCourse extends JPanel
@@ -26,7 +30,7 @@ public class GUIViewCourse extends JPanel
 		setLayout(null);
 
 		JScrollPane scrollPane = new JScrollPane();
-		scrollPane.setBounds(10, 48, 587, 327);
+		scrollPane.setBounds(10, 64, 587, 311);
 		add(scrollPane);
 
 		table = new JTable();
@@ -55,12 +59,20 @@ public class GUIViewCourse extends JPanel
 				StudentRegistrationMain.replaceMainWindowContents(new GUITeacher());
 			}
 		});
-		btnBack.setBounds(155, 389, 336, 23);
+		btnBack.setBounds(10, 386, 128, 23);
 		add(btnBack);
 
-		JButton btnLogOut = new JButton("Log Out");
-		btnLogOut.setBounds(498, 11, 99, 23);
-		add(btnLogOut);
+			
+		JPanel loginPanel = new GUILoggedIn();
+		loginPanel.setBounds(0, 0, 618, 24);
+		add(loginPanel);
+		
+		JLabel lblCourseRemoval = new JLabel("View Courses");
+		lblCourseRemoval.setForeground(Color.GRAY);
+		lblCourseRemoval.setFont(new Font("Verdana", Font.BOLD, 16));
+		lblCourseRemoval.setHorizontalAlignment(SwingConstants.CENTER);
+		lblCourseRemoval.setBounds(179, 21, 243, 23);
+		add(lblCourseRemoval);
 
 	}
 }

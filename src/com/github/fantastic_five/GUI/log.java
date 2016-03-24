@@ -24,7 +24,7 @@ import com.github.fantastic_five.GUI.GUIForgotPass;
 import com.github.fantastic_five.GUIMisc.GUIWIP;
 
 @SuppressWarnings("serial")
-public class GUILogin extends JPanel
+public class log extends JPanel
 {
 	/**
 	 * Fields - Places to enter information
@@ -34,7 +34,7 @@ public class GUILogin extends JPanel
 	private JPasswordField passwordField;
 
 	// Create the login screen panel.
-	public GUILogin()
+	public log()
 	{
 		setLayout(null);
 

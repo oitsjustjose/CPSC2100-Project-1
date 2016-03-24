@@ -36,7 +36,7 @@ public class GUITeacher extends JPanel
 			}
 		});
 
-		btnView.setBounds(232, 149, 150, 23);
+		btnView.setBounds(178, 186, 243, 23);
 		add(btnView);
 
 		// Button & logic for removing courses
@@ -46,11 +46,11 @@ public class GUITeacher extends JPanel
 			@Override
 			public void mouseClicked(MouseEvent e)
 			{
-//				StudentRegistrationMain.replaceMainWindowContents(new GUIAddDropCourse());
+				StudentRegistrationMain.replaceMainWindowContents(new GUIAddRemoveClass());
 			}
 		});
 
-		btnAddremoveCourse.setBounds(232, 204, 150, 23);
+		btnAddremoveCourse.setBounds(178, 220, 243, 23);
 		add(btnAddremoveCourse);
 
 		// Button for viewing schedules
@@ -62,7 +62,7 @@ public class GUITeacher extends JPanel
 				StudentRegistrationMain.replaceMainWindowContents(new GUIViewSchedule());
 			}
 		});
-		btnViewSchedule.setBounds(232, 259, 150, 23);
+		btnViewSchedule.setBounds(178, 254, 243, 23);
 		add(btnViewSchedule);
 
 		// Panel label
@@ -71,7 +71,7 @@ public class GUITeacher extends JPanel
 		lblTeacher.setForeground(Color.GRAY);
 		lblTeacher.setFont(new Font("Verdana", Font.BOLD, 16));
 		lblTeacher.setHorizontalAlignment(SwingConstants.CENTER);
-		lblTeacher.setBounds(232, 60, 150, 23);
+		lblTeacher.setBounds(178, 96, 243, 23);
 		add(lblTeacher);
 
 		//@TODO: Remove this later:

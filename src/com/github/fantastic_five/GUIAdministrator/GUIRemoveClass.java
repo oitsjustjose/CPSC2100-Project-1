@@ -10,8 +10,11 @@ import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
+import javax.swing.JScrollPane;
+import javax.swing.JTable;
 import javax.swing.JTextField;
 import javax.swing.SwingConstants;
+import javax.swing.table.DefaultTableModel;
 
 import com.github.fantastic_five.StudentRegistrationMain;
 import com.github.fantastic_five.GUIMisc.GUILoggedIn;
@@ -31,14 +34,14 @@ public class GUIRemoveClass extends JPanel
 		setBounds(0, 0, 618, 434);
 
 		// Label for the CRN box
-		JLabel lblCrnToRemove = new JLabel("CRN To Remove:");
+		JLabel lblCrnToRemove = new JLabel("CRN:");
 		lblCrnToRemove.setFont(new Font("Tahoma", Font.BOLD, 12));
-		lblCrnToRemove.setBounds(155, 182, 103, 14);
+		lblCrnToRemove.setBounds(41, 98, 46, 14);
 		add(lblCrnToRemove);
 
 		// The box where the CRN entered should be accessed
 		fieldCRN = new JTextField();
-		fieldCRN.setBounds(268, 180, 176, 20);
+		fieldCRN.setBounds(99, 96, 176, 20);
 		add(fieldCRN);
 		fieldCRN.setColumns(10);
 
@@ -51,11 +54,11 @@ public class GUIRemoveClass extends JPanel
 				StudentRegistrationMain.replaceMainWindowContents(new GUIAdmin());
 			}
 		});
-		btnBack.setBounds(155, 237, 89, 23);
+		btnBack.setBounds(41, 389, 128, 23);
 		add(btnBack);
 
 		// Remove Course Button and all of its actions
-		JButton btnRemoveCourseOffering = new JButton("Remove Course Offering");
+		JButton btnRemoveCourseOffering = new JButton("Remove");
 		btnRemoveCourseOffering.addActionListener(new ActionListener()
 		{
 			// Makes a pop-up dialog window
@@ -78,12 +81,11 @@ public class GUIRemoveClass extends JPanel
 				GUI.add(lblAreYouSure);
 
 				// Yes button should remove the CRN from the list
-				JButton btnYes = new JButton("Yes");
+				JButton btnYes = new JButton("No");
 				btnYes.addActionListener(new ActionListener()
 				{
 					public void actionPerformed(ActionEvent e)
 					{
-						Lib.removeMatchingCRN(Integer.parseInt(fieldCRN.getText()));
 						popup.dispose();
 					}
 				});
@@ -91,11 +93,12 @@ public class GUIRemoveClass extends JPanel
 				GUI.add(btnYes);
 
 				// No button closes the window
-				JButton btnNo = new JButton("No");
+				JButton btnNo = new JButton("Yes");
 				btnNo.addActionListener(new ActionListener()
 				{
 					public void actionPerformed(ActionEvent e)
 					{
+						Lib.removeMatchingCRN(Integer.parseInt(fieldCRN.getText()));
 						popup.dispose();
 					}
 				});
@@ -109,7 +112,7 @@ public class GUIRemoveClass extends JPanel
 				popup.setLocationRelativeTo(null);
 			}
 		});
-		btnRemoveCourseOffering.setBounds(254, 237, 190, 23);
+		btnRemoveCourseOffering.setBounds(212, 206, 190, 23);
 		add(btnRemoveCourseOffering);
 
 		// Adds the loginPanel to our panel
@@ -122,8 +125,26 @@ public class GUIRemoveClass extends JPanel
 		lblCourseRemoval.setForeground(Color.GRAY);
 		lblCourseRemoval.setFont(new Font("Verdana", Font.BOLD, 16));
 		lblCourseRemoval.setHorizontalAlignment(SwingConstants.CENTER);
-		lblCourseRemoval.setBounds(178, 107, 243, 23);
+		lblCourseRemoval.setBounds(188, 26, 243, 23);
 		add(lblCourseRemoval);
+		
+		JLabel lblSearchBy = new JLabel("Search By:");
+		lblSearchBy.setBounds(41, 67, 116, 20);
+		lblSearchBy.setForeground(Color.GRAY);
+		lblSearchBy.setFont(new Font("Verdana", Font.BOLD, 13));
+		add(lblSearchBy);
+		
+		JScrollPane scrollPane = new JScrollPane();
+		scrollPane.setBounds(41, 136, 545, 59);
+		add(scrollPane);
+
+		JTable table = new JTable();
+		table.setModel(new DefaultTableModel(new Object[][] { { null, null, null, null, null, null, null }, { null, null, null, null, null, null, null }, }, new String[] { "CRN", "Class", "Capacity", "Remaining", "Time", "Day", "Teacher", "Room" }));
+		scrollPane.setViewportView(table);
+		
+		JScrollPane scrollPane_1 = new JScrollPane();
+		scrollPane_1.setBounds(41, 247, 545, 131);
+		add(scrollPane_1);
 	}
 
 }

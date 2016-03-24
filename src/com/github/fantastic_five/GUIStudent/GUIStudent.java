@@ -14,8 +14,10 @@ import javax.swing.JPanel;
 import javax.swing.SwingConstants;
 
 import com.github.fantastic_five.StudentRegistrationMain;
+import com.github.fantastic_five.GUIMisc.GUILoggedIn;
 import com.github.fantastic_five.GUIMisc.GUIViewReport;
 import com.github.fantastic_five.GUIMisc.GUIWIP;
+import com.github.fantastic_five.GUITeacher.GUIViewCourse;
 
 @SuppressWarnings("serial")
 public class GUIStudent extends JPanel
@@ -35,11 +37,11 @@ public class GUIStudent extends JPanel
 			@Override
 			public void mouseClicked(MouseEvent e)
 			{
-				StudentRegistrationMain.replaceMainWindowContents(new GUIViewReport(new GUIStudent()));
+				StudentRegistrationMain.replaceMainWindowContents(new GUIViewCourses());
 			}
 		});
 
-		btnView.setBounds(232, 149, 150, 23);
+		btnView.setBounds(178, 186, 243, 23);
 		add(btnView);
 
 		JButton btnAddremoveCourse = new JButton("Add / Remove Course");
@@ -52,7 +54,7 @@ public class GUIStudent extends JPanel
 			}
 		});
 
-		btnAddremoveCourse.setBounds(232, 204, 150, 23);
+		btnAddremoveCourse.setBounds(178, 220, 243, 23);
 		add(btnAddremoveCourse);
 
 		JButton btnViewSchedule = new JButton("View Schedule");
@@ -63,7 +65,7 @@ public class GUIStudent extends JPanel
 				StudentRegistrationMain.replaceMainWindowContents(new GUIViewSchedule());
 			}
 		});
-		btnViewSchedule.setBounds(232, 259, 150, 23);
+		btnViewSchedule.setBounds(178, 254, 243, 23);
 		add(btnViewSchedule);
 
 		JLabel lblStudent = new JLabel("Student");
@@ -71,7 +73,7 @@ public class GUIStudent extends JPanel
 		lblStudent.setForeground(Color.GRAY);
 		lblStudent.setFont(new Font("Verdana", Font.BOLD, 16));
 		lblStudent.setHorizontalAlignment(SwingConstants.CENTER);
-		lblStudent.setBounds(232, 60, 150, 23);
+		lblStudent.setBounds(178, 96, 243, 23);
 		add(lblStudent);
 		
 		//@TODO: Remove this later:
@@ -86,5 +88,8 @@ public class GUIStudent extends JPanel
 		});		
 		add(btnBackToWip);
 
+		JPanel loginPanel = new GUILoggedIn();
+		loginPanel.setBounds(0, 0, 618, 24);
+		add(loginPanel);
 	}
 }
