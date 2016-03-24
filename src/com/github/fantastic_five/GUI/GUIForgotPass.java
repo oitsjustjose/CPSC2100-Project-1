@@ -53,7 +53,9 @@ public class GUIForgotPass
 		frame.setBounds(100, 100, 303, 141);
 		  // When the frame is closed, it simply goes away
 		frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+		frame.setLocationRelativeTo(null);
 		frame.getContentPane().setLayout(null);
+		frame.setResizable(false);
 
 		  // Create a text area to go inside the frame
 		JTextArea txtpnPleaseContactThe = new JTextArea();

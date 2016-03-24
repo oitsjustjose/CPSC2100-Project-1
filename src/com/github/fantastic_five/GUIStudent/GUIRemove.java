@@ -56,7 +56,7 @@ public class GUIRemove
 		frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 		frame.setLocationRelativeTo(null);
 		frame.getContentPane().setLayout(null);
-
+		frame.setResizable(false);
 		JLabel txtpnAreYouSure = new JLabel();
 		txtpnAreYouSure.setText("Are you sure?");
 		txtpnAreYouSure.setForeground(Color.RED);
