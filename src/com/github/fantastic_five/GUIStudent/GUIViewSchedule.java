@@ -1,5 +1,9 @@
+/**
+ * @author Alay Patel (leader)
+ * Group 5 
+ */
+
 package com.github.fantastic_five.GUIStudent;
-//Alay
 
 import java.awt.Color;
 import java.awt.Font;
@@ -24,7 +28,8 @@ public class GUIViewSchedule extends JPanel
 {
 
 	/**
-	 * Create the panel.
+	 * This GUI that would display student's individual schedule 
+	 * of courses that he/she has choosen
 	 */
 	public GUIViewSchedule()
 	{
