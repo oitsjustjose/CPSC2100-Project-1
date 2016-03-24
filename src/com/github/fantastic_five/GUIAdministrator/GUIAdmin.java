@@ -67,7 +67,7 @@ public class GUIAdmin extends JPanel
 		});
 		add(btnRemoveCourseOffering);
 
-		// Button for reports view
+		// Button & Logic for reports view
 		JButton btnViewReport = new JButton("View Report");
 		btnViewReport.setBounds(178, 254, 243, 23);
 		btnViewReport.addActionListener(new ActionListener()
@@ -91,7 +91,7 @@ public class GUIAdmin extends JPanel
 				});
 				add(btnViewEnrolledStudents);
 				
-		//Button & Logic for Teacher Staff View
+				//Button & Logic for Teacher Staff View
 				JButton btnViewTeacher = new JButton("View Teacher Staff");
 				btnViewTeacher.setBounds(178, 326, 243, 23);
 				btnViewTeacher.addActionListener(new ActionListener()

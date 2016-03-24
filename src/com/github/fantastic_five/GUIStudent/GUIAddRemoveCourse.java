@@ -1,3 +1,8 @@
+/**
+ * @author Alay Patel (leader)
+ * Group 5 
+ */
+
 package com.github.fantastic_five.GUIStudent;
 
 import java.awt.Color;
