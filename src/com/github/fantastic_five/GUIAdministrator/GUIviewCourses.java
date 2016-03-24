@@ -1,5 +1,10 @@
 package com.github.fantastic_five.GUIAdministrator;
 
+/**
+ * @author Fantastic Five (Jose Stovall)
+ * A JFrame containing all courses available at the university
+ */
+
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.event.MouseAdapter;
@@ -17,14 +22,12 @@ import com.github.fantastic_five.StudentRegistrationMain;
 import com.github.fantastic_five.GUIMisc.GUILoggedIn;
 
 @SuppressWarnings("serial")
-public class GUIviewCourses extends JPanel
+public class GUIViewCourses extends JPanel
 {
+	// Private instance variables
 	private JTable table;
 
-	/**
-	 * Creates the panel.
-	 */
-	public GUIviewCourses()
+	public GUIViewCourses()
 	{
 		setBounds(0, 0, 618, 434);
 		setLayout(null);
@@ -62,11 +65,10 @@ public class GUIviewCourses extends JPanel
 		btnBack.setBounds(10, 386, 128, 23);
 		add(btnBack);
 
-			
 		JPanel loginPanel = new GUILoggedIn();
 		loginPanel.setBounds(0, 0, 618, 24);
 		add(loginPanel);
-		
+
 		JLabel lblCourseRemoval = new JLabel("View Courses");
 		lblCourseRemoval.setForeground(Color.GRAY);
 		lblCourseRemoval.setFont(new Font("Verdana", Font.BOLD, 16));

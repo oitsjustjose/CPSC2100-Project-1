@@ -1,5 +1,10 @@
 package com.github.fantastic_five.GUIAdministrator;
 
+/**
+ * @author Fantastic Five (Jose Stovall)
+ * A JPanel containing all fields required to create a class
+ */
+
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.event.ActionEvent;
@@ -17,6 +22,7 @@ import com.github.fantastic_five.GUIMisc.GUILoggedIn;
 @SuppressWarnings("serial")
 public class GUIAddClass extends JPanel
 {
+	// Private instance variables
 	private JTextField fieldCRN;
 	private JTextField fieldCourseName;
 	private JTextField fieldSection;
@@ -25,15 +31,12 @@ public class GUIAddClass extends JPanel
 	private JTextField fieldTimes;
 	private JTextField fieldCapacity;
 
-	/**
-	 * @return A JPanel containing all fields required to create a class
-	 */
 	public GUIAddClass()
 	{
 		setLayout(null);
 		setBounds(0, 0, 618, 434);
-		// All Labels and their positions:
 
+		// All Labels and their positions:
 		JLabel lblCrn = new JLabel("CRN:");
 		lblCrn.setHorizontalAlignment(SwingConstants.LEFT);
 		lblCrn.setFont(new Font("Tahoma", Font.BOLD, 12));
@@ -76,8 +79,7 @@ public class GUIAddClass extends JPanel
 		lblStudentCapacity.setBounds(119, 265, 111, 14);
 		add(lblStudentCapacity);
 
-		// All modifyable text fields and their positions:
-
+		// All modifiable text fields and their positions:
 		fieldCRN = new JTextField();
 		fieldCRN.setColumns(10);
 		fieldCRN.setBounds(240, 113, 217, 20);

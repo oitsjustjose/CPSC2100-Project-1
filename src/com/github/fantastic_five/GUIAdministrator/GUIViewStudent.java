@@ -1,5 +1,10 @@
 package com.github.fantastic_five.GUIAdministrator;
 
+/**
+ * @author Fantastic Five (Jose Stovall)
+ * A JPanel showing all students enrolled in the college
+ */
+
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.event.MouseAdapter;
@@ -19,11 +24,9 @@ import com.github.fantastic_five.GUIMisc.GUILoggedIn;
 @SuppressWarnings("serial")
 public class GUIViewStudent extends JPanel
 {
+	// Private instance variable
 	private JTable table;
 
-	/**
-	 * Creates the panel.
-	 */
 	public GUIViewStudent()
 	{
 		setBounds(0, 0, 618, 434);
@@ -47,9 +50,10 @@ public class GUIViewStudent extends JPanel
 				{ null, null, null, null, null, null, null },
 				{ null, null, null, null, null, null, null },
 				{ null, null, null, null, null, null, null }, }, new String[]
-		{ "Last", "First", "Type", "Payment"}));
+		{ "Last", "First", "Type", "Payment" }));
 		scrollPane.setViewportView(table);
 
+		// Back button
 		JButton btnBack = new JButton("Back");
 		btnBack.addMouseListener(new MouseAdapter()
 		{
@@ -62,17 +66,16 @@ public class GUIViewStudent extends JPanel
 		btnBack.setBounds(10, 386, 128, 23);
 		add(btnBack);
 
-			
+		// Login panel for current logged in user and log-out
 		JPanel loginPanel = new GUILoggedIn();
 		loginPanel.setBounds(0, 0, 618, 24);
 		add(loginPanel);
-		
+
 		JLabel lblCourseRemoval = new JLabel("View Enrolled Students");
 		lblCourseRemoval.setForeground(Color.GRAY);
 		lblCourseRemoval.setFont(new Font("Verdana", Font.BOLD, 16));
 		lblCourseRemoval.setHorizontalAlignment(SwingConstants.CENTER);
 		lblCourseRemoval.setBounds(179, 21, 243, 23);
 		add(lblCourseRemoval);
-
 	}
 }

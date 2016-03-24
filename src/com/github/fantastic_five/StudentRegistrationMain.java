@@ -11,7 +11,8 @@ import javax.swing.UnsupportedLookAndFeelException;
 import com.github.fantastic_five.GUIMisc.GUIWIP;
 
 /**
- * @author Fantastic Five KNOW YOUR AUDIENCE, KNOW THE TASKS
+ * @author Fantastic Five Main
+ * Main class containing the Window itself and functions to control its contents
  */
 
 public class StudentRegistrationMain
@@ -22,7 +23,7 @@ public class StudentRegistrationMain
 
 	public static void main(String[] args)
 	{
-		//Attempts to stylized the GUIs and Buttons using the Operating Systems' style 
+		// Attempts to stylized the GUIs and Buttons using the Operating Systems' style
 		try
 		{
 			UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
@@ -45,6 +46,9 @@ public class StudentRegistrationMain
 		SwingUtilities.invokeLater(r);
 	}
 
+	/**
+	 * Creates the main window with required functionality
+	 */
 	private static void createMainWindow()
 	{
 		mainWindow.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -58,7 +62,6 @@ public class StudentRegistrationMain
 	}
 
 	/**
-	 * 
 	 * @param newComponent
 	 *            The Component to replace with in the main window
 	 */
